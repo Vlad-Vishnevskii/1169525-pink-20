@@ -23,12 +23,12 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="../source/index.html">
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="../source/photo.html">
+              <a href="photo.html">
                 Фотографии
               </a>
             </li>
@@ -51,39 +51,146 @@
       <h1 class="visually-hidden">
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
-      <section class="main-title">
-        <h2 class="main-title__text">
+      <section class="competition">
+        <h2 class="competition__main-title">
           Конкурс на самое
           безбашенное
           путешествие с Пинк
         </h2>
+        <h3 class="competition__title">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+        </h3>
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__section">
+            <label class="form__field-title">
+              Фамилия
+              <input class="form__field-text" type="text" name="author-surname" placeholder="Укажите фамилию *">
+            </label>
+            <label class="form__field-title">
+              Имя
+              <input class="form__field-text" type="text" name="author-name" placeholder="Введите ваше имя *">
+            </label>
+            <label class="form__field-title">
+              Отчество
+              <input class="form__field-text" type="text" name="author-middle-name" placeholder="Ну и отчество тоже">
+            </label>
+          </fieldset>
+          <fieldset class="form__section">
+            <legend class="form__title">Ваши безбашенные
+              достижения в путешествии
+            </legend>
+            <ul class="form__advance-list">
+              <li class="form__advance-item">
+                <label class="form__advance-text">Сделал селфи с акулой</label>
+                <input type="checkbox" name="selfie" checked>
+              </li>
+              <li class="form__advance-item">
+                <label class="form__advance-text">Обгорел на пляже</label>
+                <input type="checkbox" name="beach" checked>
+              </li>
+              <li class="form__advance-item">
+                <label class="form__advance-text">Видел Чака Норриса</label>
+                <input type="checkbox" name="chuck-norris">
+              </li>
+              <li class="form__advance-item">
+                <label class="form__advance-text">Накупил сувениров</label>
+                <input type="checkbox" name="souvenir">
+              </li>
+              <li class="form__advance-item">
+                <label class="form__advance-text">Удержал башню</label>
+                <input type="checkbox" name="tower" checked>
+              </li>
+              <li class="form__advance-item">
+                <label class="form__advance-text">Разгромил отель</label>
+                <input type="checkbox" name="hotel">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__section">
+            <ul class="form__contacts-list">
+              <li class="form__contacts-item">
+                <label class="form__field-title">
+                  Номер телефона
+                  <input class="form__field-text" type="text" name="telephone" placeholder="Номер, пожалуйста">
+                </label>
+              </li>
+              <li class="form__contacts-item">
+                <label class="form__field-title">
+                  Адрес почты
+                  <input class="form__field-text" type="email" name="email" placeholder="Введите почту *">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__section">
+            <legend class="form__title">
+              С каким приложением
+              путешествовали?
+            </legend>
+            <ul class="form__versions-list">
+              <li class="form__versions-item">
+                <label class="form__field-title">
+                  Pink для iOS
+                  <input class="form__field-radio" type="radio" name="ios" value="ios" checked>
+                </label>
+              </li>
+              <li class="form__versions-item">
+                <label class="form__field-title">
+                  Pink на Android
+                  <input class="form__field-radio" type="radio" name="android" value="android">
+                </label>
+              </li>
+              <li class="form__versions-item">
+                <label class="form__field-title">
+                  Windows Phone
+                  <input class="form__field-radio" type="radio" name="windows" value="windows">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__section">
+            <legend class="form__title">
+              Опишите свои эмоции
+            </legend>
+            <textarea name="story" rows="15">Можно прям в красках, не стесняясь в выражениях
+            </textarea>
+          </fieldset>
+          <button class="form_button button" type="submit">
+            Отправить форму
+          </button>
+          <p class="from__notation"><span class="from__star">*</span> — обязательные поля</p>
+        </form>
       </section>
+
+
     </main>
 
-      <footer class="page-footer">
-        <a class="page-footer__logo">
-          <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="Pink">
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="Pink">
+      </a>
+      <ul class="page-footer__social-buttons social-buttons">
+        <li class="social-buttons__item">
+          <a class="social-buttons__link social-buttons__link_icon_twitter"><span class="visually-hidden">twitter</span></a>
+        </li>
+        <li class="social-buttons__item">
+          <a class="social-buttons__link social-buttons__link_icon_facebook"><span class="visually-hidden">facebook</span></a>
+        </li>
+        <li class="social-buttons__item">
+          <a class="social-buttons__link social-buttons__link_icon_youtube"><span class="visually-hidden">youtube</span></a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright сopyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Academy-logo">
         </a>
+      </div>
 
-        <ul class="page-footer__social-buttons social-buttons">
-          <li class="social-buttons__social-item">
-            <a class="social-buttons__twitter"><span class="visually-hidden">twitter</span></a>
-          </li>
-          <li class="social-buttons__item">
-            <a class="social-buttons__facebook"><span class="visually-hidden">facebook</span></a>
-          </li>
-          <li class="social-buttons__item">
-            <a class="social-buttons__youtube"><span class="visually-hidden">youtube</span></a>
-          </li>
-        </ul>
-
-        <div class="page-footer__copyright сopyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Academy-logo">
-          </a>
-        </div>
-      </footer>
+    </footer>
 
   </body>
 </html>
