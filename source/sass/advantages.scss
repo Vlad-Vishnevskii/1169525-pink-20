@@ -1,0 +1,28 @@
+@import "./colors.scss";
+
+.advantages {
+  background-color: $grey;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $extra-light-black;
+  padding-top: 53px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__title {
+  font-family: Open Sans, Arial;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+

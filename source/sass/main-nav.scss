@@ -1,0 +1,20 @@
+@import "./colors.scss";
+
+.main-nav {
+  color: $white;
+  text-transform: uppercase;
+  font-family: Open Sans, Arial;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 20px;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  color: $white;
+}

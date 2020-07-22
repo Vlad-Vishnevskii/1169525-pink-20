@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Pink">
-      </a>
+    <header class="header">
       <nav class="main-nav">
+        <a class="header__logo">
+          <img src="./img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+        </a>
         <button class="main-nav__burger-button main-nav__burger-button_current " type="button">
           <span class="visually-hidden">
             Открыть меню
@@ -21,30 +22,37 @@
           </span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
-              <a>
+            <li class="menu-list__item">
+              <a class="menu-list__link">
                 Конкурс
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">
                 Html Academy
               </a>
             </li>
           </ul>
         </div>
       </nav>
+      <section class="header__main-title">
+        <h2 class="header__text">
+          Конкурс на самое
+          безбашенное
+          путешествие с Пинк
+        </h2>
+      </section>
     </header>
 
     <main class="page-main">
@@ -52,11 +60,6 @@
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
       <section class="competition">
-        <h2 class="competition__main-title">
-          Конкурс на самое
-          безбашенное
-          путешествие с Пинк
-        </h2>
         <h3 class="competition__title">
           Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
@@ -169,7 +172,7 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="Pink">
+        <img src="./img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
       </a>
       <ul class="page-footer__social-buttons social-buttons">
         <li class="social-buttons__item">
@@ -186,7 +189,7 @@
       <div class="page-footer__copyright сopyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Academy-logo">
+          <img src="./img/htmlacademy.svg" width="27" height="34" alt="Academy-logo">
         </a>
       </div>
 
