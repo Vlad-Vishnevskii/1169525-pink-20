@@ -1,0 +1,18 @@
+@import "./colors.scss";
+
+.description {
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+  background-color: $light-black;
+  color: $white;
+  font-family: Open Sans, Arial;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.description__os-list {
+  list-style: none;
+}

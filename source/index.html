@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
       <nav class="main-nav">
         <a class="header__logo">
-          <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Pink">
+          <img src="./img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
         </a>
         <button class="main-nav__burger-button main-nav__burger-button_current " type="button">
           <span class="visually-hidden">
@@ -23,41 +24,40 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a>
+              <a class="menu-list__link">
                 Главная
               </a>
             </li>
             <li class="menu-list__item">
-              <a href="photo.html">
+              <a class="menu-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="menu-list__item">
-              <a href="form.html">
+              <a class="menu-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
             <li class="menu-list__item">
-              <a href="#">
+              <a class="menu-list__link" href="#">
                 Html Academy
               </a>
             </li>
           </ul>
         </div>
       </nav>
+      <section class="header__main-title">
+        <h2 class="header__text">
+          Взгляните на жизнь
+          иначе!
+        </h2>
+      </section>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
-
-      <section class="main-title">
-        <h2 class="main-title__text">
-          Взгляните на жизнь
-          иначе!
-        </h2>
-      </section>
 
       <section class="description">
         <h2 class="visually-hidden">
@@ -68,13 +68,13 @@
         </button>
         <ul class="description__os-list">
           <li class="description__os-item">
-            <img src="https://via.placeholder.com/150x150" width="47" height="56" alt="IOS">
+            <img src="./img/logo-apple.svg" width="47" height="56" alt="IOS">
           </li>
           <li class="description__os-item">
-            <img src="https://via.placeholder.com/150x150" width="43" height="47" alt="Android">
+            <img src="./img/logo-android.svg" width="43" height="47" alt="Android">
           </li>
           <li class="description__os-item">
-            <img src="https://via.placeholder.com/150x150" width="44" height="41" alt="Windows">
+            <img src="./img/logo-microsoft.svg" width="44" height="41" alt="Windows">
           </li>
         </ul>
         <p class="description__text">
@@ -98,21 +98,21 @@
         <h2 class="visually-hidden">
           Приемущества от использования нашего приложения
         </h2>
-        <ul class="advantages__advantages-list">
-          <li class="advantages__advantages-item">
-            <h3>Поднимает настроение</h3>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
             Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           </li>
-          <li class="advantages__advantages-item">
-            <h3>Меняет мир вокруг</h3>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </li>
-          <li class="advantages__advantages-item">
-            <h3>Заводит новых друзей</h3>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </li>
         </ul>
-        <img class="advantages__img" src="https://via.placeholder.com/150x150" width="157" height="320" alt="phone">
+        <img class="advantages__img" src="./img/iphone-screen-mobile@1x.png" width="157" height="320" alt="phone">
       </section>
 
       <section class="reviews slider">

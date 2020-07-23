@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Pink">
-      </a>
+    <header class="header">
       <nav class="main-nav">
+        <a class="header__logo">
+          <img src="./img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+        </a>
         <button class="main-nav__burger-button main-nav__burger-button_current " type="button">
           <span class="visually-hidden">
             Открыть меню
@@ -21,30 +22,35 @@
           </span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="./index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a>
+            <li class="menu-list__item">
+              <a class="menu-list__link">
                 Фотографии
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="#">
                 Html Academy
               </a>
             </li>
           </ul>
         </div>
       </nav>
+      <section class="header__main-title">
+        <h2 class="header__text">
+          Фотографии пользователей
+        </h2>
+      </section>
     </header>
 
     <main class="page-main">
@@ -52,127 +58,135 @@
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
 
-      <section class="users-photo">
-        <h2 class="users-photo__title">
-          Фотографии пользователей
-        </h2>
-
-
-        <ul class="slogan-list">
-          <li class="slogan-list__item">
-            Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?
-          </li>
-        </ul>
+      <ul class="slogan-list slogan-list_text-style">
+        <li class="slogan-list__item">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </li>
+      </ul>
 
         <ul class="social-band">
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="320" height="133" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Анна
-            </cite>
-            <span class="social-band_post-time">
-              (5 минут назад)
-            </span>
-            <p class="social-band_post-text">
-              Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 215
-            </span>
+            <img class="social-band__img" src="./img/panorama-mobile@1x.jpg" width="320" height="133" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Анна
+              </cite>
+              <span class="social-band_post-time">
+                (5 минут назад)
+              </span>
+              <p class="social-band_post-text">
+                Прыгать или нет? Напишите в
+                комментарии свой совет и
+                смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 215
+              </span>
+            </div>
           </li>
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="280" height="176" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Левон
-            </cite>
-            <span class="social-band_post-time">
-              (5 часов назад)
-            </span>
-            <p class="social-band_post-text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 356
-            </span>
+            <img class="social-band__img" src="./img/photo-car-mobile@1x.jpg" width="280" height="176" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Левон
+              </cite>
+              <span class="social-band_post-time">
+                (5 часов назад)
+              </span>
+              <p class="social-band_post-text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 356
+              </span>
+            </div>
           </li>
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="280" height="176" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Антон
-            </cite>
-            <span class="social-band_post-time">
-              (12 часов назад)
-            </span>
-            <p class="social-band_post-text">
-              Соседи будут рады!
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 666
-            </span>
+            <img class="social-band__img" src="./img/photo-drumset-mobile@1x.jpg" width="280" height="176" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Антон
+              </cite>
+              <span class="social-band_post-time">
+                (12 часов назад)
+              </span>
+              <p class="social-band_post-text">
+                Соседи будут рады!
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 666
+              </span>
+            </div>
           </li>
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="280" height="176" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Борис
-            </cite>
-            <span class="social-band_post-time">
-              (20 часов назад)
-            </span>
-            <p class="social-band_post-text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 215
-            </span>
+            <img class="social-band__img" src="./img/photo-window-mobile@1x.jpg" width="280" height="176" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Борис
+              </cite>
+              <span class="social-band_post-time">
+                (20 часов назад)
+              </span>
+              <p class="social-band_post-text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 215
+              </span>
+            </div>
           </li>
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="280" height="176" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Сергей
-            </cite>
-            <span class="social-band_post-time">
-              (25 часов назад)
-            </span>
-            <p class="social-band_post-text">
-              Самая кубанская в мире!
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 4
-            </span>
+            <img class="social-band__img" src="./img/photo-fair-mobile@1x.jpg" width="280" height="176" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Сергей
+              </cite>
+              <span class="social-band_post-time">
+                (25 часов назад)
+              </span>
+              <p class="social-band_post-text">
+                Самая кубанская в мире!
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 4
+              </span>
+            </div>
           </li>
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="280" height="176" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Максим
-            </cite>
-            <span class="social-band_post-time">
-              (40 часов назад)
-            </span>
-            <p class="social-band_post-text">
-              Где снег-то?
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 150
-            </span>
+            <img class="social-band__img" src="./img/photo-pov-mobile@1x.jpg" width="280" height="176" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Максим
+              </cite>
+              <span class="social-band_post-time">
+                (40 часов назад)
+              </span>
+              <p class="social-band_post-text">
+                Где снег-то?
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 150
+              </span>
+            </div>
           </li>
           <li class="social-band__item">
-            <img class="social-band__img" src="https://via.placeholder.com/150x150" width="280" height="176" alt="post-image">
-            <cite aria-label="Автор фото" class="social-band_author">
-              Надежда
-            </cite>
-            <span class="social-band_post-time">
-              (45 часов назад)
-            </span>
-            <p class="social-band_post-text">
-              Всем GM и взаимные лайки!
-            </p>
-            <span class="social-band__like-counter">
-              Нравится: 2560
-            </span>
+            <img class="social-band__img" src="./img/photo-wing-mobile@1x.jpg" width="280" height="176" alt="post-image">
+            <div class="social-band__post-wrapper">
+              <cite aria-label="Автор фото" class="social-band_author">
+                Надежда
+              </cite>
+              <span class="social-band_post-time">
+                (45 часов назад)
+              </span>
+              <p class="social-band_post-text">
+                Всем GM и взаимные лайки!
+              </p>
+              <span class="social-band__like-counter">
+                Нравится: 2560
+              </span>
+            </div>
           </li>
         </ul>
       </section>
@@ -195,7 +209,7 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" width="145" height="40" alt="Pink">
+        <img src="./img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
       </a>
       <ul class="page-footer__social-buttons social-buttons">
         <li class="social-buttons__item">
@@ -212,7 +226,7 @@
       <div class="page-footer__copyright сopyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Academy-logo">
+          <img src="./img/htmlacademy.svg" width="27" height="34" alt="Academy-logo">
         </a>
       </div>
 
