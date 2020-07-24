@@ -19,6 +19,7 @@
 
 .social-buttons__item {
   margin-right: 14px;
+
   &:last-of-type {
     margin-right: 0;
   }
@@ -32,29 +33,22 @@
 
 .social-buttons__link {
   display: inline-block;
-
 }
 
 .social-buttons__icon_twitter {
-  background-image: url(../img/icon-twitter.svg);
+  background-image: url("../img/icon-twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-buttons__icon_facebook {
-  background-image: url(../img/icon-facebook.svg);
+  background-image: url("../img/icon-facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-buttons__icon_youtube {
-  background-image: url(../img/icon-youtube.svg);
+  background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-
-
-
-

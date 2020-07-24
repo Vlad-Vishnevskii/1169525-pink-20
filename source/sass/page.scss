@@ -1,13 +1,7 @@
+@import "./colors.scss";
+
 .page__body {
   margin: 2px;
-}
-
-.page-main {
-  outline:  2px solid red;
-}
-
-.page-footer {
-  outline:  2px solid green;
 }
 
 .visually-hidden {
@@ -31,11 +25,10 @@
 
 .button {
   display: block;
-  border: 3px solid #FFFFFF;
+  border: 3px solid $white;
   box-sizing: border-box;
   border-radius: 35px;
   padding-top: 21px;
   padding-bottom: 21px;
   text-align: center;
-
 }
