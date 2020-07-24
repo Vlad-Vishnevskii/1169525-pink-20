@@ -1,17 +1,23 @@
 @import "./colors.scss";
 
 .header {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  outline:  2px solid rebeccapurple;
-  padding: 22px;
+  background-size: cover;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+}
+
+.header__main-title {
+  text-align: center;
 }
 
 .header__text {
   color: $white;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
-  font-family: Open Sans, Arial;
+  line-height: 1.2;
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0;
 }
-

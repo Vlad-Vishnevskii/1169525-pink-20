@@ -1,8 +1,17 @@
 @import "./colors.scss";
+
 .social-band {
   list-style: none;
   color: $extra-light-black;
-  font-family: Open Sans, Arial;
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.social-band__item {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 
 .social-band__post-wrapper {
@@ -27,6 +36,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
 .social-band__like-counter {

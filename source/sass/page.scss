@@ -1,13 +1,7 @@
+@import "./colors.scss";
+
 .page__body {
   margin: 2px;
-}
-
-.page-main {
-  outline:  2px solid red;
-}
-
-.page-footer {
-  outline:  2px solid green;
 }
 
 .visually-hidden {
@@ -21,4 +15,20 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: block;
+  border: 3px solid $white;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center;
 }
