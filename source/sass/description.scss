@@ -11,8 +11,24 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 }
 
 .description__os-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.description__download {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+}
+
+
+
+

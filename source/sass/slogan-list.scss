@@ -7,15 +7,20 @@
   font-family: Open Sans, Arial;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
-  padding-top: 46px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 70px;
-  margin: 0;
+  line-height: 1.2;
+  padding: 0;
 }
 
 .slogan-list_text-style {
   font-size: 14px;
   line-height: 30px;
 }
+
+.slogan-list__item {
+  text-align: center;
+  margin-bottom: 40px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+

@@ -1,5 +1,60 @@
+@import "./colors.scss";
+
 .page-footer {
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 }
+
+.page-footer__social-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  justify-content: center;
+}
+
+.social-buttons__item {
+  margin-right: 14px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  width: 48px;
+  height: 48px;
+  border: 3px solid $grey;
+  background-color: $white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.social-buttons__link {
+  display: inline-block;
+
+}
+
+.social-buttons__icon_twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-buttons__icon_facebook {
+  background-image: url(../img/icon-facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-buttons__icon_youtube {
+  background-image: url(../img/icon-youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
