@@ -2,8 +2,6 @@
 
 .description {
   padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 38px;
   background-color: $light-black;
   color: $white;
@@ -12,14 +10,14 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  width: 320px;
 }
 
 .description__os-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 
 .description__os-item {
@@ -42,6 +40,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 300px;
 
   &::after {
     content: url("../img/iphone-hand-mobile@1x.png");
@@ -52,7 +51,6 @@
 
 @media (min-width: $tablet-width) {
   .description {
-    min-width: 300px;
     background: none;
     font-weight: 300;
     font-size: 18px;
@@ -60,20 +58,28 @@
     text-align: left;
     min-height: 330px;
   }
+
+  .description__download {
+    margin: 0;
+  }
+}
+
+.description__text {
+  max-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .decription__wrapper {
-    padding-left: 20px;
     padding-top: 100px;
     position: relative;
     z-index: 10;
+    padding-left: 60px;
   }
 
   .decription__wrapper::after {
     content: url("../img/iphone-hand-tablet@1x.png");
     position: absolute;
-    top: 10px;
+    top: 27px;
     left: 100px;
     z-index: 1;
   }
@@ -98,7 +104,7 @@
   .decription__wrapper::after {
     content: url("../img/iphone-hand-desktop@1x.png");
     position: absolute;
-    top: 10px;
+    top: 27px;
     left: 150px;
     z-index: 1;
   }

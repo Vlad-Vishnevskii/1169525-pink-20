@@ -61,6 +61,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .social-band {
+    width: 1200px;
+  }
+
   .social-band__item:not(:first-of-type) {
     width: 300px;
   }

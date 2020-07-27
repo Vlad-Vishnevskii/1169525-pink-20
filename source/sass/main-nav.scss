@@ -11,6 +11,13 @@
   flex-direction: column;
 }
 
+
+@media (max-width: $desktop-width) {
+  .main-nav__logo-wrapper {
+    margin: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     flex-direction: row;
