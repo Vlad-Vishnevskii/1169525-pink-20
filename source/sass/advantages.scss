@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "./variables.scss";
 
 .advantages {
   background-color: $grey;
@@ -37,4 +37,77 @@
   color: $black;
   margin-top: 0;
   margin-bottom: 24px;
+}
+
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    flex-direction: row;
+    margin: 0;
+    max-width: 620px;
+  }
+
+  .advantages__list {
+    order: 2;
+    margin-left: 42px;
+  }
+
+  .advantages__item {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__img {
+    display: none;
+  }
+
+  .advantages__wrapper {
+    flex-direction: row;
+    margin: 0;
+    max-width: 1200px;
+  }
+
+  .advantages__list {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .advantages__item {
+    text-align: left;
+    width: 252px;
+    margin-right: 80px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:first-of-type::before {
+      content: url("../img/iphone-screen-1-desktop@1x.png");
+      position: relative;
+      top: -20px;
+      left: -15px;
+    }
+
+    &:nth-last-of-type(2)::before {
+      content: url("../img/iphone-screen-2-desktop@1x.png");
+      position: relative;
+      top: -20px;
+      left: -15px;
+    }
+
+    &:last-of-type::before {
+      content: url("../img/iphone-screen-3-desktop@1x.png");
+      position: relative;
+      top: -20px;
+      left: -15px;
+    }
+  }
 }

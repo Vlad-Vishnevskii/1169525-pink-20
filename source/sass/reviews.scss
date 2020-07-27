@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.reviews {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__author {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 31px;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__text {
+  color: $extra-light-black;
+}

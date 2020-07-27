@@ -1,7 +1,7 @@
-@import "./colors.scss";
+@import "./variables.scss";
 
 .page__body {
-  margin: 2px;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -30,5 +30,21 @@
   border-radius: 35px;
   padding-top: 21px;
   padding-bottom: 21px;
+  width: 280px;
   text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+}
+
+.button_pink {
+  border-color: $pink;
+  color: $pink;
+}
+
+.button_gray {
+  border-color: $extra-light-black;
+  color: $extra-light-black;
+  opacity: 0.1;
 }

@@ -1,0 +1,50 @@
+@import "./variables.scss";
+
+.price {
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 81px;
+  text-transform: uppercase;
+  background-color: $grey;
+}
+
+.price__title {
+  background-color: $extra-light-black;
+  color: $white;
+  padding-top: 14px;
+  padding-bottom: 30px;
+}
+
+.price__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.price_value {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price__item {
+  background-color: $white;
+}
+
+.price__table {
+  border-spacing: 15px 0;
+}
+
+.price__cell {
+  padding-top: 25px;
+  padding-bottom: 26px;
+}
+
+.price__toggles {
+  padding-top: 45px;
+  padding-bottom: 48px;
+}

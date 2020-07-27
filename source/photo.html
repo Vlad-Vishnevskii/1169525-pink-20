@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
@@ -46,7 +47,7 @@
           </ul>
         </div>
       </nav>
-      <section class="header__main-title">
+      <section class="header__main-title header__main-title_photo-and-form">
         <h2 class="header__text">
           Фотографии пользователей
         </h2>
@@ -58,7 +59,7 @@
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
 
-      <ul class="slogan-list slogan-list_text-style">
+      <ul class="slogan-list slogan-list_text-style slogan-list_photo-page">
         <li class="slogan-list__item">
           Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
@@ -194,17 +195,21 @@
       </section>
 
       <section class="upload">
-        <h3 class="upload__title">
+        <h3 class="upload__title container">
           Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
         </h3>
-        <img class="upload__photo" src="https://via.placeholder.com/150x150" width="280" height="374" alt="Ваше фото">
-        <button class="upload__confirm button" type="button">
-          Запостить
-        </button>
-        <button class="upload__сancel button" type="button">
-          Отмена
-        </button>
+        <div class="upload__grey-background">
+          <img class="upload__photo" src="./img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваше фото">
+          <div class="upload__buttons-wrapper">
+            <button class="upload_confirm button button_pink" type="button">
+              Запостить
+            </button>
+            <button class="upload__cancel button button_gray" type="button">
+              Отмена
+            </button>
+          </div>
+        </div>
       </section>
 
     </main>

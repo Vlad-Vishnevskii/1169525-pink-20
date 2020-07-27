@@ -46,8 +46,8 @@
           </ul>
         </div>
       </nav>
-      <section class="header__main-title">
-        <h2 class="header__text">
+      <section class="header__main-title header__main-title_photo-and-form">
+        <h2 class="header__text header__text_large">
           Конкурс на самое
           безбашенное
           путешествие с Пинк
@@ -66,52 +66,52 @@
           миль на вашу бонусную карту!
         </h3>
         <form class="form" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__section">
-            <label class="form__field-title">
-              Фамилия
+          <div class="form__section">
+            <label class="form__field">
+              <span class="form__field-title">Фамилия:</span><br>
               <input class="form__field-text" type="text" name="author-surname" placeholder="Укажите фамилию *" required>
             </label>
-            <label class="form__field-title">
-              Имя
+            <label class="form__field">
+              <br><span class="form__field-title">Имя:</span><br>
               <input class="form__field-text" type="text" name="author-name" placeholder="Введите ваше имя *" required>
             </label>
-            <label class="form__field-title">
-              Отчество
+            <label class="form__field">
+              <br><span class="form__field-title">Отчество:</span><br>
               <input class="form__field-text" type="text" name="author-middle-name" placeholder="Ну и отчество тоже">
             </label>
-          </fieldset>
-          <fieldset class="form__section">
-            <legend class="form__title">Ваши безбашенные
+          </div>
+          <div class="form__section">
+            <legend class="form__field-title form__title">Ваши безбашенные
               достижения в путешествии
             </legend>
             <ul class="form__advance-list">
               <li class="form__advance-item">
+                <input class="form__checkbox" type="checkbox" name="selfie" checked>
                 <label class="form__advance-text">Сделал селфи с акулой</label>
-                <input type="checkbox" name="selfie" checked>
               </li>
               <li class="form__advance-item">
+                <input class="form__checkbox" type="checkbox" name="beach" checked>
                 <label class="form__advance-text">Обгорел на пляже</label>
-                <input type="checkbox" name="beach" checked>
               </li>
               <li class="form__advance-item">
+                <input class="form__checkbox" type="checkbox" name="chuck-norris">
                 <label class="form__advance-text">Видел Чака Норриса</label>
-                <input type="checkbox" name="chuck-norris">
               </li>
               <li class="form__advance-item">
+                <input class="form__checkbox" type="checkbox" name="souvenir">
                 <label class="form__advance-text">Накупил сувениров</label>
-                <input type="checkbox" name="souvenir">
               </li>
               <li class="form__advance-item">
+                <input class="form__checkbox" type="checkbox" name="tower" checked>
                 <label class="form__advance-text">Удержал башню</label>
-                <input type="checkbox" name="tower" checked>
               </li>
               <li class="form__advance-item">
+                <input class="form__checkbox" type="checkbox" name="hotel">
                 <label class="form__advance-text">Разгромил отель</label>
-                <input type="checkbox" name="hotel">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__section">
+          </div>
+          <div class="form__section">
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
                 <label class="form__field-title">
@@ -126,44 +126,44 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__section">
-            <legend class="form__title">
-              С каким приложением
+          </div>
+          <div class="form__section">
+            <legend class="form__field-title form__title">
+              С каким приложением<br>
               путешествовали?
             </legend>
             <ul class="form__versions-list">
               <li class="form__versions-item">
                 <label class="form__field-title">
-                  Pink для iOS
                   <input class="form__field-radio" type="radio" name="os" value="ios" checked>
+                  <span class="form_radio-text">Pink для iOS</span>
                 </label>
               </li>
               <li class="form__versions-item">
                 <label class="form__field-title">
-                  Pink на Android
                   <input class="form__field-radio" type="radio" name="os" value="android">
+                <span class="form_radio-text">Pink на Android</span>
                 </label>
               </li>
               <li class="form__versions-item">
                 <label class="form__field-title">
-                  Windows Phone
                   <input class="form__field-radio" type="radio" name="os" value="windows">
+                <span class="form_radio-text">Windows Phone</span>
                 </label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form__section">
-            <legend class="form__title">
+          </div>
+          <div class="form__section">
+            <legend class="form__field-title form__title">
               Опишите свои эмоции
             </legend>
-            <textarea name="story" rows="15">Можно прям в красках, не стесняясь в выражениях
+            <textarea class="form__story-text" name="story"  rows="8">Можно прям в красках, не стесняясь в выражениях
             </textarea>
-          </fieldset>
+          </div>
           <button class="form_button button" type="submit">
             Отправить форму
           </button>
-          <p class="from__notation"><span class="from__star">*</span> — обязательные поля</p>
+          <p class="from__notation container"><span class="form__star">*</span> — обязательные поля</p>
         </form>
       </section>
 

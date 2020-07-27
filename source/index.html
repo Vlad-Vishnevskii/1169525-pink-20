@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
@@ -46,12 +47,41 @@
           </ul>
         </div>
       </nav>
-      <section class="header__main-title container">
-        <h2 class="header__text">
-          Взгляните на жизнь
-          иначе!
-        </h2>
-      </section>
+      <div class="decription__wrapper">
+        <section class="header__main-title">
+          <h2 class="header__text">
+            Взгляните на жизнь
+            иначе!
+          </h2>
+        </section>
+
+        <section class="description">
+          <h2 class="visually-hidden">
+            Операционные систем поддерживающих наше приложение
+          </h2>
+          <div class="description__wraper">
+            <a href="#" class="description__download button">
+              Скачать приложение
+            </a>
+            <ul class="description__os-list">
+              <li class="description__os-item">
+                <img src="./img/logo-apple.svg" width="47" height="56" alt="IOS">
+              </li>
+              <li class="description__os-item">
+                <img src="./img/logo-android.svg" width="43" height="47" alt="Android">
+              </li>
+              <li class="description__os-item">
+                <img src="./img/logo-microsoft.svg" width="44" height="41" alt="Windows">
+              </li>
+            </ul>
+            <p class="description__text">
+              Доступно для iPhone, iPad, Android,
+              Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </section>
+      </div>
+
     </header>
 
     <main class="page-main">
@@ -59,36 +89,9 @@
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
 
-      <section class="description">
-        <h2 class="visually-hidden">
-          Операционные систем поддерживающих наше приложение
-        </h2>
-        <div class="description__wraper container">
-          <a href="#" class="description__download button">
-            Скачать приложение
-          </a>
-          <ul class="description__os-list">
-            <li class="description__os-item">
-              <img src="./img/logo-apple.svg" width="47" height="56" alt="IOS">
-            </li>
-            <li class="description__os-item">
-              <img src="./img/logo-android.svg" width="43" height="47" alt="Android">
-            </li>
-            <li class="description__os-item">
-              <img src="./img/logo-microsoft.svg" width="44" height="41" alt="Windows">
-            </li>
-          </ul>
-          <p class="description__text">
-            Доступно для iPhone, iPad, Android,
-            Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </section>
-
       <ul class="slogan-list container">
         <li class="slogan-list__item">
-          Устали от серости
-          мегаполиса?
+          Устали от серости мегаполиса?
         </li>
         <li class="slogan-list__item">
           Нам есть, что вам
@@ -119,7 +122,27 @@
         </div>
       </section>
 
-      <section class="reviews slider">
+      <section class="facts">
+        <h1 class="visually-hidden">Интересные факты</h1>
+        <img class="facts__img" src="./img/timer.png" width="238" height="276px" alt="Таймер">
+        <div class="facts__text">
+          <h2 class="facts__title">
+            Эффект
+            на 24 часа!
+          </h2>
+          <p class="facts__decsription">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится целые сутки!
+
+          </p>
+          <a href="#" class="facts__link">
+            Узнать больше об исследовании
+          </a>
+        </div>
+      </section>
+
+      <section class="reviews slider container">
         <h2 class="visually-hidden">
           Отзывы
         </h2>
@@ -154,10 +177,12 @@
           Цены
         </h2>
         <ul class="slider__list">
-          <li class="slider-item">
-            <h2 class="price__title">Стандарт</h2>
-            <p class="price_value">3,99 USD</p>
-            <table class="price__table">
+          <li class="slider-item price__item">
+            <div class="price__title">
+              <h2 class="price__name">Стандарт</h2>
+              <p class="price_value">3,99 USD</p>
+            </div>
+            <table class="price__table container">
               <tr class="price__line">
                 <td class="price__cell">Розовый фильтр</td>
                 <td class="price__cell">V</td>
@@ -187,23 +212,27 @@
       </section>
 
       <section class="contacts">
+        <div class="contacts__wrapper container">
         <h2 class="contacts__title">
           Остались вопросы?
           Свяжитесь с нами!
         </h2>
         <p class="contacts__text">
-          Звоните:
+          Звоните:<br>
           <a class="contacts__link" href="tel:78125556666">+7 (812) 555-66-66</a>
         </p>
         <p class="contacts__text">
-          Пишите:
+          Пишите:<br>
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="contacts__text">
-          Звоните:
+          Приезжайте в гости:<br>
           <a class="contacts__link" href="https://yandex.ru/maps/-/CCQlZVV5dD">ул. Большая
             Конюшенная, 19/8</a>
         </p>
+        </div>
+        <div class= "contacts__map">
+        </div>
       </section>
 
     </main>

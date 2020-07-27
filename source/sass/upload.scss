@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+.upload {
+  margin-top: 49px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-align: center;
+}
+
+.upload__title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $extra-light-black;
+}
+
+.upload__grey-background {
+  background-color: $grey;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload_confirm {
+  margin-top: 90px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload__cancel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .upload__grey-background {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload__grey-background {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
