@@ -1,20 +1,36 @@
-@import "./variables.scss";
-
 .facts {
   display: none;
-  width: 660px;
   align-items: center;
-  padding-left: 20px;
   padding-top: 54px;
   padding-bottom: 109px;
+
+  @include tablets {
+    display: block;
+  }
+
+  @include desktop {
+    background-color: $grey;
+    padding-top: 0;
+  }
+}
+
+.facts__wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
 .facts__text {
   margin-left: 72px;
-  width: 310px;
+  max-width: 310px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+
+  @include desktop {
+    max-width: 525px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .facts__title {
@@ -22,38 +38,17 @@
   line-height: 36px;
   color: $black;
   width: 168px;
+
+  @include desktop {
+    max-width: 298px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .facts__link {
   font-size: 14px;
   line-height: 24px;
   color: $pink;
-}
-
-@media (min-width: $tablet-width) {
-  .facts {
-    display: flex;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .facts {
-    display: flex;
-    width: 1200px;
-    background-color: $grey;
-    padding-left: 131px;
-  }
-
-  .facts__text {
-    width: 534px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .facts__title {
-    width: 298px;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-  }
 }
