@@ -13,3 +13,23 @@ $green: #2aab6d;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
+$mobile-width: 320px;
+
+//mobile mixin
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (min-width: $mobile-width) {
+    @content;
+  }
+}
