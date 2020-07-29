@@ -1,13 +1,15 @@
-@import "./variables.scss";
-
 .page-footer {
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
   padding-bottom: 51px;
   display: flex;
   flex-direction: column;
+
+  @include tablets {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__social-buttons {
@@ -58,20 +60,4 @@
 
 .copyright__text {
   margin-right: 15px;
-}
-
-
-@media (min-width: $tablet-width) {
-  .page-footer {
-    width: 660px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    width: 1200px;
-  }
 }

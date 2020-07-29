@@ -111,63 +111,14 @@
     line-height: 24px;
   }
 }
-/*
-@media (min-width: $tablet-width) {
-  .description {
-    /*background: none;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: left;
-    min-height: 330px;
-  }
 
-  .description__download {
-    margin: 0;
-  }
-}
-*/
-/*
-
-@media (min-width: $tablet-width) {
-  .decription__wrapper {
-    padding-top: 100px;
-    position: relative;
-    z-index: 10;
-    padding-left: 60px;
-  }
-
-  .decription__wrapper::after {
-    /*content: url("../img/iphone-hand-tablet@1x.png");
-    position: absolute;
-    top: 27px;
-    left: 100px;
-    z-index: 1;
-  }
+.description__header_page-from {
+  font-size: 24px;
+  line-height: 33px;
+  padding-bottom: 84px;
 }
 
-@media (min-width: $tablet-width) {
-  .description__os-list {
-    justify-content: start;
-  }
+.description_page-from {
+  background: none;
+  padding-top: 36px;
 }
-
-@media (min-width: $desktop-width) {
-  .description {
-    min-height: 415px;
-  }
-
-  .decription__wrapper {
-    padding-left: 194px;
-    padding-top: 114px;
-  }
-
-  .decription__wrapper::after {
-    content: url("../img/iphone-hand-desktop@1x.png");
-    position: absolute;
-    top: 27px;
-    left: 150px;
-    z-index: 1;
-  }
-}
-*/

@@ -8,7 +8,8 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <nav class="main-nav">
+      <nav class="main-nav container">
+        <div class="main-nav__logo-wrapper">
         <a class="header__logo">
           <img src="./img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
         </a>
@@ -22,10 +23,11 @@
             Закрыть меню
           </span>
         </button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link" href="./index.html">
+              <a class="menu-list__link" href="index.html">
                 Главная
               </a>
             </li>
@@ -47,8 +49,8 @@
           </ul>
         </div>
       </nav>
-      <section class="header__main-title header__main-title_photo-and-form container">
-        <h2 class="header__text">
+      <section class="description container description_page-from">
+        <h2 class="description__header description__header_page-from">
           Фотографии пользователей
         </h2>
       </section>
@@ -59,7 +61,7 @@
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
 
-      <ul class="slogan-list slogan-list_text-style slogan-list_photo-page">
+      <ul class="slogan-list container slogan-list_photo-page">
         <li class="slogan-list__item">
           Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
@@ -214,7 +216,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo">
         <img src="./img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
       </a>
