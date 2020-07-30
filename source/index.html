@@ -11,7 +11,11 @@
       <nav class="main-nav container">
         <div class="main-nav__logo-wrapper">
         <a class="header__logo">
-          <img src="./img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          <picture>
+            <source srcset="./img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="./img/logo-pink-white-tablet.svg" media="(min-width: 768px)">
+            <img src="./img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink">
+          </picture>
         </a>
         <button class="main-nav__burger-button main-nav__burger-button_current " type="button">
           <span class="visually-hidden">
@@ -85,15 +89,15 @@
         Сайт фотоприложения для раскрашивания серых будней
       </h1>
 
-      <ul class="slogan-list container">
-        <li class="slogan-list__item">
+      <div class="slogan-list container">
+        <p class="slogan-list__item">
           Устали от серости мегаполиса?
-        </li>
-        <li class="slogan-list__item">
-          Нам есть, что вам
+        </p>
+        <p class="slogan-list__item">
+          Нам есть, что вам &nbsp;
           предложить!
-        </li>
-      </ul>
+        </p>
+      </div>
 
       <section class="advantages">
         <div class="advantages__wrapper container">
@@ -110,18 +114,24 @@
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <h3 class="advantages__title">Заводит новых&nbsp;друзей</h3>
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </li>
           </ul>
-          <img class="advantages__img" src="./img/iphone-screen-mobile@1x.png" width="157" height="320" alt="phone">
+          <picture>
+            <source srcset="./img/iphone-screen-3-tablet@1x.png" media="(min-width: 768px)">
+            <img class="advantages__img" src="./img/iphone-screen-mobile@1x.png" width="157" height="320" alt="phone">
+          </picture>
         </div>
       </section>
 
       <div class="facts">
         <div class="facts__wrapper container">
           <h1 class="visually-hidden">Интересные факты</h1>
-          <img class="facts__img" src="./img/timer.png" width="238" height="276px" alt="Таймер">
+          <picture>
+            <source srcset="./img/timer-desktop.svg" media="(min-width: 1200px)">
+            <img class="facts__img" src="./img/timer.png" width="238" height="276px" alt="Таймер">
+          </picture>
           <div class="facts__text">
             <h2 class="facts__title">
               Эффект
@@ -252,7 +262,7 @@
       </ul>
 
       <div class="page-footer__copyright сopyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="./img/htmlacademy.svg" width="27" height="34" alt="Academy-logo">
         </a>

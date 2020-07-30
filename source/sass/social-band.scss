@@ -6,16 +6,30 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+
+  @include tablets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
 }
 
 .social-band__img {
   display: block;
+  width: 100%;
 }
 
 .social-band__item {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+}
+
+.social-band__item:not(:first-of-type) {
+  @include tablets {
+    max-width: 300px;
+  }
 }
 
 .social-band__post-wrapper {
@@ -26,6 +40,10 @@
   padding-top: 25px;
   padding-right: 10px;
   margin-bottom: 20px;
+
+  @include tablets {
+    min-height: 174px;
+  }
 }
 
 .social-band__item:first-of-type .social-band__post-wrapper:first-of-type {
@@ -59,6 +77,10 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 25px;
+
+  @include tablets {
+    min-height: 45px;
+  }
 }
 
 .social-band__like-counter {
@@ -66,26 +88,4 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $pink;
-}
-
-@media (min-width: $tablet-width) {
-  .social-band {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .social-band__item:not(:first-of-type) {
-    width: 300px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .social-band {
-    width: 1200px;
-  }
-
-  .social-band__item:not(:first-of-type) {
-    width: 300px;
-  }
 }

@@ -24,6 +24,8 @@
   @include desktop {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 40px bottom;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -42,6 +44,7 @@
   }
 
   @include desktop {
+    max-width: auto;
     font-size: 50px;
     line-height: 68px;
     margin-bottom: 51px;
@@ -116,9 +119,38 @@
   font-size: 24px;
   line-height: 33px;
   padding-bottom: 84px;
+
+  @include tablets {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 358px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    text-align: center;
+  }
 }
 
 .description_page-from {
   background: none;
   padding-top: 36px;
+
+  @include desktop {
+    padding-top: 74px;
+  }
+}
+
+.description__header_form-page {
+  @include tablets {
+    max-width: 620px;
+  }
+
+  @include desktop {
+    max-width: 747px;
+  }
 }

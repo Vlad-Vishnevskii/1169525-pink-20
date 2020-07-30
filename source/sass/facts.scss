@@ -3,6 +3,7 @@
   align-items: center;
   padding-top: 54px;
   padding-bottom: 109px;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   @include tablets {
     display: block;
@@ -17,6 +18,13 @@
 .facts__wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+.facts picture {
+  @include desktop {
+    width: 298px;
+    height: 345px;
+  }
 }
 
 .facts__text {
@@ -37,7 +45,7 @@
   font-size: 30px;
   line-height: 36px;
   color: $black;
-  width: 168px;
+  max-width: 168px;
 
   @include desktop {
     max-width: 298px;

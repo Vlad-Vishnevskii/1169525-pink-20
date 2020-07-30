@@ -14,9 +14,17 @@
   }
 }
 
-.header__logo,
+.header__logo {
+  display: block;
+}
+
 .header__logo img {
   display: block;
+
+  @include tablets {
+    width: 145px;
+    height: 40px;
+  }
 }
 
 .header__text_large {
