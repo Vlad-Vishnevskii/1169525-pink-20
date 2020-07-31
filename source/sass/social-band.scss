@@ -15,18 +15,24 @@
   }
 }
 
+.social-band__wrapper-down {
+  @include tablets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .social-band__img {
   display: block;
   width: 100%;
 }
 
 .social-band__item {
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
 }
 
-.social-band__item:not(:first-of-type) {
+.social-band__wrapper-down .social-band__item {
   @include tablets {
     max-width: 300px;
   }
@@ -46,14 +52,26 @@
   }
 }
 
-.social-band__item:first-of-type .social-band__post-wrapper:first-of-type {
-  margin: 0 20px;
+.social-band__post-wrapper-long {
+  background-color: $grey;
   margin-bottom: 20px;
+
+  @include tablets {
+    margin-bottom: 50px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    width: 940px;
+  }
 }
 
 .social-band__item_no-padding {
   padding-left: 0;
   padding-right: 0;
+  width: 100%;
 }
 
 .social-band_author {
