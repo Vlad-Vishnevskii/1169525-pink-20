@@ -41,13 +41,22 @@ img {
   border: 3px solid $white;
   box-sizing: border-box;
   border-radius: 35px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   color: $white;
+  width: 280px;
+
+  @include tablets {
+    width: 260px;
+  }
+
+  @include desktop {
+    width: 183px;
+  }
 }
 
 .button_pink {

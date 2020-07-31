@@ -11,15 +11,39 @@
   font-size: 14px;
   line-height: 30px;
   color: $extra-light-black;
+  padding-bottom: 50px;
+
+  @include tablets {
+    padding-bottom: 76px;
+  }
+}
+
+.upload__wrapper {
+  background-color: $grey;
 }
 
 .upload__grey-background {
-  background-color: $grey;
   padding-top: 20px;
   padding-bottom: 41px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include tablets {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.upload__buttons-wrapper {
+  @include desktop {
+    display: flex;
+  }
 }
 
 .upload_confirm {
@@ -27,25 +51,14 @@
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
+
+  @include desktop {
+    margin: 0;
+    margin-right: 44px;
+  }
 }
 
 .upload__cancel {
   margin-left: auto;
   margin-right: auto;
-}
-
-
-@media (min-width: $tablet-width) {
-  .upload__grey-background {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .upload__grey-background {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-  }
 }
