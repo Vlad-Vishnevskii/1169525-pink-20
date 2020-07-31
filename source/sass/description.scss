@@ -73,9 +73,11 @@
   text-decoration: none;
   margin: 0 auto;
   margin-bottom: 38px;
+  width: 260px;
 
   @include desktop {
     margin-bottom: 51px;
+    width: 300px;
   }
 }
 

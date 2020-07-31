@@ -11,8 +11,6 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 54px;
   padding-bottom: 55px;
 }
@@ -24,7 +22,6 @@
 
   &:nth-of-type(2),
   &:nth-of-type(4) {
-    padding: 0;
     background-color: $grey;
   }
 
@@ -41,12 +38,17 @@
   font-size: 14px;
   line-height: 30px;
   padding-left: 24px;
+
+  &:last-of-type {
+    padding-left: 0;
+  }
 }
 
 .form__field-text {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 21px;
+  padding-right: 21px;
   width: 100%;
   box-sizing: border-box;
   font-weight: normal;
@@ -146,11 +148,10 @@
   font-size: 18px;
   line-height: 30px;
   background-color: $green;
-  border: 2px solid $green;
   border-radius: 1px;
   margin-top: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 45px;
   padding-right: 45px;
 }
