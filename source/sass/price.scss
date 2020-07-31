@@ -1,5 +1,3 @@
-@import "./variables.scss";
-
 .price {
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
@@ -7,6 +5,12 @@
   padding-top: 81px;
   text-transform: uppercase;
   background-color: $grey;
+  position: relative;
+
+  @include tablets {
+    padding: 0 20px;
+    padding-top: 81px;
+  }
 }
 
 .price__title {
@@ -14,14 +18,36 @@
   color: $white;
   padding-top: 14px;
   padding-bottom: 30px;
-}
-
-.price__name {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  margin-top: 0;
-  margin-bottom: 15px;
+
+  &::after {
+    content: url("../img/hit.png");
+    position: absolute;
+    left: 0;
+    top: 81px;
+
+    @include tablets {
+      content: "";
+    }
+  }
+
+  @include tablets {
+    min-height: 75px;
+    padding: 0;
+  }
+}
+
+.price__title-name {
+  margin-bottom: 8px;
+
+  @include tablets {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+  }
 }
 
 .price_value {
@@ -33,18 +59,59 @@
 
 .price__item {
   background-color: $white;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $light-grey;
+  min-height: 59px;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 19px;
+
+  @include tablets {
+    justify-content: center;
+  }
 }
 
-.price__table {
-  border-spacing: 15px 0;
-}
-
-.price__cell {
-  padding-top: 25px;
-  padding-bottom: 26px;
+.price__name-list {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .price__toggles {
   padding-top: 45px;
   padding-bottom: 48px;
+}
+
+.price__position {
+  @include tablets {
+    display: block;
+    border-left: 2px solid $light-grey;
+  }
+}
+
+.price__position:first-of-type {
+  text-transform: none;
+}
+
+.price__position:not(:first-of-type) .price__name {
+  @include tablets {
+    display: none;
+  }
+}
+
+.price__list {
+  @include tablets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

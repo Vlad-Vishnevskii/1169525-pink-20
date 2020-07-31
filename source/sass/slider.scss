@@ -1,7 +1,14 @@
-@import "./variables.scss";
-
 .slider__list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.slider-item {
+  display: none;
+  font-size: 55px;
+}
+
+.slider-item_active {
+  display: block;
 }
