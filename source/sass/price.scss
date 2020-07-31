@@ -89,7 +89,7 @@
 .price__position {
   @include tablets {
     display: block;
-    border-left: 2px solid $light-grey;
+    border-right: 2px solid $light-grey;
   }
 }
 
@@ -97,10 +97,19 @@
   text-transform: none;
 }
 
+.price__position:first-of-type .price__title {
+  background: none;
+  border-bottom: 2px solid $light-grey;
+}
+
 .price__position:not(:first-of-type) .price__name {
   @include tablets {
     display: none;
   }
+}
+
+.price__position:first-of-type .price__item {
+  border-left: 2px solid $light-grey;
 }
 
 .price__list {
