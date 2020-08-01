@@ -1,5 +1,3 @@
-@import "./colors.scss";
-
 .slogan-list {
   background-color: $white;
   color: $extra-light-black;
@@ -8,7 +6,22 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 1.2;
-  padding: 0;
+  margin: 0;
+  padding-top: 46px;
+  padding-bottom: 70px;
+
+  @include tablets {
+    font-size: 40px;
+    line-height: 54px;
+    padding-top: 58px;
+    padding-bottom: 47px;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .slogan-list_text-style {
@@ -20,7 +33,48 @@
   text-align: center;
   margin-bottom: 40px;
 
+  @include tablets {
+    max-width: 588px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
   &:last-of-type {
     margin-bottom: 0;
+
+    @include tablets {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slogan-list_photo-page {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @include tablets {
+    font-size: 18px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    max-width: 572px;
+    padding-top: 100px;
+    padding-bottom: 97px;
   }
 }

@@ -1,24 +1,68 @@
-@import "./colors.scss";
-
 .description {
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 38px;
-  background-color: $light-black;
+  padding-top: 23px;
   color: $white;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left 110px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include tablets {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 102px;
+    padding-bottom: 119px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: bottom;
+  }
+
+  @include desktop {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 40px bottom;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-.description__os-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.description__header {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 315px;
+
+  @include tablets {
+    padding-bottom: 0;
+    max-width: 300px;
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  @include desktop {
+    max-width: auto;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 51px;
+  }
+}
+
+.description__wrapper {
+  background-color: $light-black;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+
+  @include tablets {
+    background: none;
+    padding: 0;
+    max-width: 300px;
+  }
 }
 
 .description__download {
@@ -27,4 +71,88 @@
   line-height: 18px;
   color: $white;
   text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  width: 260px;
+
+  @include desktop {
+    margin-bottom: 51px;
+    width: 300px;
+  }
+}
+
+.description__os-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 21px;
+
+  @include desktop {
+    margin-bottom: 59px;
+  }
+}
+
+.description__os-item {
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.description__text {
+  color: $white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0;
+
+  @include tablets {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.description__header_page-from {
+  font-size: 24px;
+  line-height: 33px;
+  padding-bottom: 84px;
+
+  @include tablets {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 358px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    text-align: center;
+  }
+}
+
+.description_page-from {
+  background: none;
+  padding-top: 36px;
+
+  @include desktop {
+    padding-top: 74px;
+  }
+}
+
+.description__header_form-page {
+  @include tablets {
+    max-width: 620px;
+  }
+
+  @include desktop {
+    max-width: 747px;
+  }
 }

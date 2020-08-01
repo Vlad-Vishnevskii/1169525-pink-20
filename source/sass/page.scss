@@ -1,7 +1,15 @@
-@import "./colors.scss";
+.page {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
 
 .page__body {
-  margin: 2px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -18,9 +26,14 @@
 }
 
 .container {
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  padding: 0 20px;
+
+  @include desktop () {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .button {
@@ -28,7 +41,37 @@
   border: 3px solid $white;
   box-sizing: border-box;
   border-radius: 35px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white;
+  width: 280px;
+
+  @include tablets {
+    width: 260px;
+  }
+
+  @include desktop {
+    width: 183px;
+  }
+}
+
+.button_pink {
+  border-color: $pink;
+  color: $pink;
+}
+
+.button_gray {
+  border-color: $extra-light-black;
+  color: $extra-light-black;
+  opacity: 0.1;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }

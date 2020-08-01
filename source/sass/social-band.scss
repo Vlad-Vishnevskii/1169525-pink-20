@@ -1,21 +1,76 @@
-@import "./colors.scss";
-
 .social-band {
   list-style: none;
   color: $extra-light-black;
   font-family: "Open Sans", "Arial", sans-serif;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.social-band__wrapper-down {
+  @include tablets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.social-band__img {
+  display: block;
+  width: 100%;
 }
 
 .social-band__item {
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
+}
+
+.social-band__wrapper-down .social-band__item {
+  @include tablets {
+    max-width: 300px;
+  }
 }
 
 .social-band__post-wrapper {
   background-color: $grey;
+  text-align: left;
+  padding-left: 17px;
+  padding-bottom: 26px;
+  padding-top: 25px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+
+  @include tablets {
+    min-height: 174px;
+  }
+}
+
+.social-band__post-wrapper-long {
+  background-color: $grey;
+  margin-bottom: 20px;
+
+  @include tablets {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    width: 940px;
+  }
+}
+
+.social-band__item_no-padding {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 
 .social-band_author {
@@ -23,6 +78,7 @@
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
+  margin-bottom: 14px;
 }
 
 .social-band_post-time {
@@ -37,6 +93,11 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  margin-bottom: 25px;
+
+  @include tablets {
+    min-height: 45px;
+  }
 }
 
 .social-band__like-counter {
