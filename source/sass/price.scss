@@ -1,8 +1,8 @@
 .price {
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
-  margin-top: 30px;
-  padding-top: 81px;
+  margin-top: 52px;
+  padding-top: 85px;
   text-transform: uppercase;
   background-color: $grey;
   position: relative;
@@ -16,8 +16,8 @@
 .price__title {
   background-color: $extra-light-black;
   color: $white;
-  padding-top: 14px;
-  padding-bottom: 30px;
+  padding-top: 13px;
+  padding-bottom: 28px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
@@ -25,8 +25,8 @@
   &::after {
     content: url("../img/hit.png");
     position: absolute;
-    left: 0;
-    top: 81px;
+    left: 20px;
+    top: 0;
 
     @include tablets {
       content: "";
@@ -40,7 +40,11 @@
 }
 
 .price__title-name {
-  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: -3px;
 
   @include tablets {
     font-weight: bold;
@@ -65,14 +69,42 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid $light-grey;
-  min-height: 59px;
+  min-height: 61px;
   align-items: center;
-  padding-left: 22px;
-  padding-right: 19px;
+  padding-left: 43px;
+  padding-right: 41px;
 
   @include tablets {
     justify-content: center;
   }
+}
+
+.price__position {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 279px;
+    background-color: $light-grey;
+    left: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 279px;
+    background-color: $light-grey;
+    right: 22px;
+    top: 0;
+  }
+
+}
+
+.price__include {
+  margin-top: 10px;
 }
 
 .price__name-list {
@@ -82,8 +114,12 @@
 }
 
 .price__toggles {
-  padding-top: 45px;
-  padding-bottom: 48px;
+  padding-top: 32px;
+  padding-bottom: 43px;
+}
+
+.price__toggle {
+  margin-right: 9px;
 }
 
 .price__position {

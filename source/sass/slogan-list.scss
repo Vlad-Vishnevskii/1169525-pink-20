@@ -7,8 +7,8 @@
   font-size: 24px;
   line-height: 1.2;
   margin: 0;
-  padding-top: 46px;
-  padding-bottom: 70px;
+  padding-top: 17px;
+  padding-bottom: 60px;
 
   @include tablets {
     font-size: 40px;
@@ -21,6 +21,7 @@
     margin: 0 auto;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 62px;
   }
 }
 
@@ -31,7 +32,7 @@
 
 .slogan-list__item {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 
   @include tablets {
     max-width: 588px;

@@ -7,6 +7,7 @@
   color: $extra-light-black;
   text-align: center;
   overflow: hidden;
+  padding-top: 38px;
 
   @include tablets {
     text-align: left;
@@ -20,6 +21,8 @@
 .advantages__list {
   list-style: none;
   padding: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
 
   @include tablets {
     max-width: 310px;
@@ -31,14 +34,19 @@
     display: flex;
     max-width: inherit;
     margin-top: 0;
-    padding-top: 85px;
-    padding-left: 24px;
+    padding-top: 11px;
+    padding-left: 0;
     padding-right: 24px;
   }
 }
 
 .advantages__item {
-  margin-bottom: 43px;
+  width: 280px;
+  margin-bottom: 32px;
+
+  &:nth-of-type(2) {
+    margin-bottom: 29px;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -47,12 +55,12 @@
   @include desktop {
     font-size: 18px;
     line-height: 30px;
-    margin-left: 31px;
+    margin-left: 41px;
   }
 
   &:first-of-type {
     @include desktop {
-      margin-left: 0;
+      margin-left: 8px;
     }
   }
 }
@@ -62,6 +70,7 @@
     content: url("../img/iphone-screen-1-desktop@1x.png");
     position: relative;
     top: -40px;
+    left: -5px;
     display: block;
     margin-bottom: 10px;
   }
@@ -72,6 +81,7 @@
     content: url("../img/iphone-screen-2-desktop@1x.png");
     position: relative;
     top: -40px;
+    left: -5px;
     display: block;
     margin-bottom: 10px;
   }
@@ -95,7 +105,7 @@
   line-height: 24px;
   color: $black;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 13px;
 
   @include tablets {
     margin-bottom: 15px;
@@ -130,7 +140,7 @@
   display: block;
   margin: 0 auto;
   position: relative;
-  top: 38px;
+  top: 40px;
 
   @include tablets {
     margin: 0;
