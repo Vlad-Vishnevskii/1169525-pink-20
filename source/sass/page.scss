@@ -30,7 +30,9 @@ img {
   padding: 0 20px;
 
   @include tablets {
-
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   @include desktop () {

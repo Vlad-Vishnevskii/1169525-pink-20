@@ -12,8 +12,18 @@
   padding-left: 0;
   padding-right: 0;
 
+  @include tablets {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+  }
+
   @include desktop {
-    padding-top: 19px;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 28px;
   }
 }
 
@@ -31,15 +41,16 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  @include tablets {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 660px;
+  }
+
   @include desktop () {
+    width: auto;
     background-color: transparent;
     padding: 0;
-  }
-}
-
-@media (max-width: $desktop-width) {
-  .main-nav__logo-wrapper {
-    margin: 0;
   }
 }
 

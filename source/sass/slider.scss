@@ -29,6 +29,10 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .slider__toggle_current {

@@ -8,7 +8,25 @@
   @include tablets {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include desktop {
+    justify-content: start;
+    padding: 0;
+    padding-top: 38px;
+  }
+}
+
+.page-footer__logo {
+  @include tablets {
+    margin-right: 78px;
+  }
+
+  @include desktop {
+    margin-right: 240px;
   }
 }
 
@@ -19,6 +37,14 @@
   padding: 0;
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    margin-right: 91px;
+  }
+
+  @include desktop {
+    margin-right: 232px;
+  }
 }
 
 .social-buttons__item {
@@ -33,6 +59,10 @@
   background-color: $white;
   border-radius: 50%;
   overflow: hidden;
+
+  @include desktop {
+    margin-right: 8px;
+  }
 }
 
 .social-buttons__link {
@@ -60,6 +90,10 @@
 .page-footer__copyright {
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    margin-top: 6px;
+  }
 }
 
 .copyright__text {
@@ -68,6 +102,11 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 18px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .copyright__link {

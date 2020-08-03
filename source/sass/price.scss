@@ -8,8 +8,12 @@
   position: relative;
 
   @include tablets {
-    padding: 0 20px;
-    padding-top: 81px;
+    padding-top: 60px;
+  }
+
+  @include desktop {
+    padding-top: 102px;
+    padding-bottom: 48px;
   }
 }
 
@@ -21,21 +25,25 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
+  border: 1px solid $light-grey;
 
   &::after {
     content: url("../img/hit.png");
     position: absolute;
     left: 20px;
     top: 0;
-
-    @include tablets {
-      content: "";
-    }
   }
 
   @include tablets {
-    min-height: 75px;
+    &::after {
+      content: none;
+    }
+    min-height: 81px;
     padding: 0;
+  }
+
+  @include desktop {
+    min-height: 97px;
   }
 }
 
@@ -51,6 +59,12 @@
     font-size: 16px;
     line-height: 30px;
     margin: 0;
+    padding-top: 12px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    padding-top: 13px;
   }
 }
 
@@ -59,6 +73,15 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+
+  @include tablets {
+    margin-top: -3px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    margin-top: 0;
+  }
 }
 
 .price__item {
@@ -68,19 +91,31 @@
   line-height: 30px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid $light-grey;
-  min-height: 61px;
+  border: 1px solid $light-grey;
+  border-collapse: collapse;
+  min-height: 60px;
   align-items: center;
-  padding-left: 43px;
+  padding-left: 41px;
   padding-right: 41px;
 
   @include tablets {
     justify-content: center;
+    min-height: 47px;
+  }
+
+  @include desktop {
+    min-height: 61px;
   }
 }
 
 .price__position {
   position: relative;
+
+  &:first-of-type .price__item {
+    justify-content: start;
+    padding-left: 16px;
+    padding-right: 0;
+  }
 
   &::before {
     content: "";
@@ -89,6 +124,10 @@
     height: 279px;
     background-color: $light-grey;
     left: 20px;
+
+    @include tablets {
+      content: none;
+    }
   }
 
   &::after {
@@ -99,12 +138,19 @@
     background-color: $light-grey;
     right: 22px;
     top: 0;
-  }
 
+    @include tablets {
+      content: none;
+    }
+  }
 }
 
 .price__include {
   margin-top: 10px;
+
+  @include tablets {
+    margin-top: 6px;
+  }
 }
 
 .price__name-list {
@@ -116,6 +162,10 @@
 .price__toggles {
   padding-top: 32px;
   padding-bottom: 43px;
+
+  @include tablets {
+    padding-bottom: 15px;
+  }
 }
 
 .price__toggle {
@@ -125,7 +175,6 @@
 .price__position {
   @include tablets {
     display: block;
-    border-right: 2px solid $light-grey;
   }
 }
 
@@ -133,9 +182,31 @@
   text-transform: none;
 }
 
-.price__position:first-of-type .price__title {
-  background: none;
-  border-bottom: 2px solid $light-grey;
+.price__position:first-of-type .price__item {
+  @include  tablets {
+    justify-content: start;
+  }
+
+  @include desktop {
+    justify-content: start;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.price__title_no-background {
+  @include tablets {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid $light-grey;
+    border-right: none;
+  }
+
+  @include desktop {
+    border-right: 1px solid $extra-light-black;
+  }
 }
 
 .price__position:not(:first-of-type) .price__name {
@@ -148,14 +219,50 @@
   border-left: 2px solid $light-grey;
 }
 
+.price__position:nth-of-type(2) .price__title {
+  @include tablets {
+    border-left: none;
+  }
+
+  @include desktop {
+    border-left-color: $extra-light-black;
+    border-right: 1px solid $light-grey;
+  }
+}
+
+.price__position:nth-of-type(3) .price__title {
+  @include desktop {
+    border-right: none;
+    border-left: none;
+    position: relative;
+  }
+
+  &::before {
+    @include tablets {
+      content: url("../img/hit-small.png");
+      position: absolute;
+      left: 1px;
+      top: 1px;
+    }
+    @include desktop {
+      content: url("../img/hit.png");
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
 .price__list {
   @include tablets {
+    max-width: 620px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   @include desktop {
-    max-width: 940px;
+    max-width: 943px;
     margin: 0 auto;
     padding: 0;
   }
