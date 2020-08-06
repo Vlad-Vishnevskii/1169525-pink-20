@@ -75,7 +75,6 @@
   @include desktop {
     display: none;
   }
-
 }
 
 .facts__br-tablet {
@@ -84,7 +83,7 @@
   }
 }
 
-.facts__br-desctop{
+.facts__br-desctop {
   display: none;
 
   @include desktop {

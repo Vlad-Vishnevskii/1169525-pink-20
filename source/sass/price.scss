@@ -115,6 +115,18 @@
     justify-content: start;
     padding-left: 16px;
     padding-right: 0;
+    border-left: 2px solid $light-grey;
+
+    @include tablets {
+      justify-content: start;
+    }
+
+    @include desktop {
+      justify-content: start;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 
   &::before {
@@ -142,6 +154,10 @@
     @include tablets {
       content: none;
     }
+  }
+
+  @include tablets {
+    display: block;
   }
 }
 
@@ -172,29 +188,6 @@
   margin-right: 9px;
 }
 
-.price__position {
-  @include tablets {
-    display: block;
-  }
-}
-
-.price__position:first-of-type {
-  text-transform: none;
-}
-
-.price__position:first-of-type .price__item {
-  @include  tablets {
-    justify-content: start;
-  }
-
-  @include desktop {
-    justify-content: start;
-    padding-left: 20px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
 .price__title_no-background {
   @include tablets {
     background: none;
@@ -213,10 +206,6 @@
   @include tablets {
     display: none;
   }
-}
-
-.price__position:first-of-type .price__item {
-  border-left: 2px solid $light-grey;
 }
 
 .price__position:nth-of-type(2) .price__title {
@@ -244,6 +233,7 @@
       left: 1px;
       top: 1px;
     }
+
     @include desktop {
       content: url("../img/hit.png");
       position: absolute;

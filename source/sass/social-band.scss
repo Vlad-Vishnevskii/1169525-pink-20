@@ -7,17 +7,16 @@
   flex-direction: column;
 
   @include tablets {
+    width: 620px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
     margin: 0 auto;
   }
 
-  @include tablets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  @include desktop {
+    width: 940px;
   }
 }
 
@@ -29,6 +28,15 @@
 .social-band__img_stertch {
   max-height: 506px;
   object-fit: cover;
+
+  @include tablets {
+    max-height: 509px;
+  }
+
+  @include desktop {
+    max-height: none;
+    min-height: 506px;
+  }
 }
 
 .social-band__item {
@@ -37,36 +45,79 @@
   @include tablets {
     max-width: 300px;
   }
+
+  @include desktop {
+    margin-bottom: 36px;
+  }
 }
 
 .social-band__post-wrapper {
   background-color: $grey;
   text-align: left;
   padding-left: 17px;
-  padding-bottom: 26px;
-  padding-top: 25px;
+  padding-bottom: 19px;
+  padding-top: 16px;
   padding-right: 10px;
   margin-bottom: 20px;
 
   @include tablets {
-    min-height: 174px;
+    min-height: 155px;
+    padding-left: 30px;
+    padding-top: 23px;
+    padding-right: 30px;
+  }
+
+  @include desktop {
+    padding-left: 28px;
   }
 }
 
 .social-band__post-wrapper-long {
   background-color: $grey;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   @include tablets {
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    margin-bottom: 49px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+    padding-bottom: 13px;
   }
 
   @include desktop {
     width: 940px;
+    padding-left: 29px;
+    padding-bottom: 0;
   }
 }
+
+.social-band__post-wrapper-long .social-band__like-counter {
+  @include tablets {
+    order: 1;
+  }
+}
+
+.social-band__post-wrapper-long .social-band_post-text {
+  @include tablets {
+    order: 2;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
 
 .social-band_author {
   font-weight: bold;
@@ -88,10 +139,16 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
   @include tablets {
-    min-height: 45px;
+    min-height: 48px;
+  }
+}
+
+.social-band_post-text br {
+  @include tablets {
+    display: none;
   }
 }
 
@@ -100,4 +157,64 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $pink;
+
+  @include tablets {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.social-band__like-counter_strech {
+  @include tablets {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.social-band__like-text_strech {
+  @include tablets {
+    order: -1;
+    margin-right: 16px;
+  }
+}
+
+.social-band__like-text {
+  margin-left: 16px;
+
+  @include tablets {
+    order: -1;
+    margin-left: 0;
+  }
+}
+
+.photo-element_sretch {
+  position: relative;
+}
+
+.photo-element_sretch::after {
+  position: absolute;
+  content: "Панорама дня";
+  background-color: $pink;
+  color: $white;
+  display: flex;
+  width: 140px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  top: 0;
+  right: 20px;
+
+  @include tablets {
+    top: 57px;
+  }
+
+  @include desktop {
+    top: 55px;
+    right: 121px;
+  }
 }

@@ -94,6 +94,12 @@
 }
 
 .reviews__author-info {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
+
   @include desktop {
     font-size: 18px;
     line-height: 30px;
@@ -112,13 +118,5 @@
   @include tablets {
     font-size: 18px;
     line-height: 30px;
-  }
-}
-
-.reviews__author-info {
-  display: none;
-
-  @include tablets {
-    display: block;
   }
 }

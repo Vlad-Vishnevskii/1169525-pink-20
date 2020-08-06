@@ -20,6 +20,12 @@
   }
 }
 
+.page-footer_margin-photo-page {
+  @include desktop {
+    padding-top: 65px;
+  }
+}
+
 .page-footer__logo {
   @include tablets {
     margin-right: 78px;

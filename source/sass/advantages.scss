@@ -86,6 +86,7 @@
 
   &:nth-of-type(2) {
     margin-bottom: 29px;
+
     @include tablets {
       margin-bottom: 34px;
     }
@@ -103,9 +104,9 @@
     width: 272px;
     font-size: 18px;
     line-height: 30px;
-     margin-left: 49px;
-     padding-left: 17px;
-     padding-right: 17px;
+    margin-left: 49px;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 
   &:first-of-type {

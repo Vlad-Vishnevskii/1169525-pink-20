@@ -64,19 +64,24 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  padding-bottom: 60px;
+  padding-top: 44px;
+  padding-bottom: 51px;
   text-align: center;
+  max-width: 283px;
+  margin: 0 auto;
 
   @include tablets {
     font-size: 18px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 89px;
+    padding-bottom: 78px;
   }
 
   @include desktop {
     max-width: 572px;
-    padding-top: 100px;
-    padding-bottom: 97px;
+    padding-top: 92px;
+    padding-bottom: 88px;
   }
 }
