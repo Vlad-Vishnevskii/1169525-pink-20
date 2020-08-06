@@ -12,3 +12,31 @@
 .slider-item_active {
   display: block;
 }
+
+.slider__toggle {
+  background-color: $extra-light-black;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  margin-right: 13px;
+  box-sizing: content-box;
+  border: 3px solid $white;
+  overflow: hidden;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.slider__toggle_current {
+  margin-top: 0;
+  background-color: $white;
+  border: 3px solid $black;
+  opacity: 1;
+}

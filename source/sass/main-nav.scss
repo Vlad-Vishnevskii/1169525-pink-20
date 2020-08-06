@@ -11,24 +11,55 @@
   flex-direction: column;
   padding-left: 0;
   padding-right: 0;
-}
 
+  @include tablets {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    background-color: $extra-light-black;
+  }
 
-.main-nav__logo-wrapper {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  background-color: $extra-light-black;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @include desktop () {
+  @include desktop {
+    background: none;
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
     padding: 0;
+    padding-top: 28px;
   }
 }
 
-@media (max-width: $desktop-width) {
-  .main-nav__logo-wrapper {
-    margin: 0;
+.main-nav__wrapper {
+  @include desktop () {
+    margin-top: 10px;
+    margin-left: 173px;
+  }
+}
+
+.main-nav__logo-wrapper {
+  padding-top: 23px;
+  padding-bottom: 21px;
+  background-color: $extra-light-black;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    padding-top: 26px;
+    padding-bottom: 41px;
+    width: 660px;
+  }
+
+  @include desktop () {
+    width: auto;
+    background-color: transparent;
+    padding: 0;
   }
 }
 
@@ -56,17 +87,20 @@
 .menu-list__item {
   background-color: $extra-light-black;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   &:last-of-type {
-    border-bottom: 2px solid $black;
+    border-bottom: 1px solid $black;
+    padding-bottom: 15.5px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .menu-list__item {
+  @include tablets {
+    padding-top: 16px;
+  }
+
+  @include desktop {
     margin-right: 78px;
     background-color: transparent;
     box-shadow: none;
@@ -74,6 +108,13 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+.menu-list__item:nth-of-type(2),
+.menu-list__item:nth-of-type(3) {
+  @include desktop {
+    margin-right: 79px;
   }
 }
 
@@ -93,13 +134,16 @@
   }
 }
 
-.main-nav__burger-button,
-.main-nav__close-button {
+.main-nav__burger-button {
   display: none;
 }
 
-.main-nav__wrapper {
-  @include desktop () {
-    margin-left: auto;
+.main-nav__close-button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  @include desktop {
+    display: none;
   }
 }

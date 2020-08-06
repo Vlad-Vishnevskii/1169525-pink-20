@@ -2,7 +2,7 @@
   display: none;
   align-items: center;
   padding-top: 54px;
-  padding-bottom: 109px;
+  padding-bottom: 62px;
   font-family: "Open Sans", "Arial", sans-serif;
 
   @include tablets {
@@ -11,41 +11,53 @@
 
   @include desktop {
     background-color: $grey;
-    padding-top: 0;
+    padding-top: 35px;
   }
 }
 
 .facts__wrapper {
   display: flex;
-  justify-content: space-around;
 }
 
-.facts picture {
+.facts__img {
+  @include tablets {
+    margin-left: 20px;
+  }
+
   @include desktop {
+    margin-left: 0;
     width: 298px;
     height: 345px;
   }
 }
 
 .facts__text {
-  margin-left: 72px;
-  max-width: 310px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  @include tablets {
+    margin-left: 72px;
+    margin-top: 18px;
+    max-width: 308px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   @include desktop {
-    max-width: 525px;
+    max-width: none;
+    width: 534px;
     font-size: 18px;
     line-height: 30px;
+    padding-top: 53px;
   }
 }
 
 .facts__title {
-  font-size: 30px;
-  line-height: 36px;
-  color: $black;
-  max-width: 168px;
+  @include tablets {
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+    max-width: 168px;
+    margin-bottom: 0;
+  }
 
   @include desktop {
     max-width: 298px;
@@ -55,8 +67,49 @@
   }
 }
 
+.facts__title br {
+  @include tablets {
+    display: inline;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.facts__br-tablet {
+  @include desktop {
+    display: none;
+  }
+}
+
+.facts__br-desctop {
+  display: none;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.facts__decsription {
+  @include tablets {
+    margin-top: 10px;
+    margin-bottom: 9px;
+  }
+
+  @include desktop {
+    margin-top: 21px;
+    margin-bottom: 30px;
+  }
+}
+
 .facts__link {
   font-size: 14px;
   line-height: 24px;
   color: $pink;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
