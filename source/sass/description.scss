@@ -7,6 +7,11 @@
   line-height: 24px;
   text-align: center;
   background-image: url("../img/iphone-hand-mobile@1x.png");
+
+  @include retina {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 257px auto;
+  }
   background-repeat: no-repeat;
   background-position: 2px 110px;
   padding-left: 0;
@@ -19,10 +24,20 @@
     padding-bottom: 116px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: bottom;
+
+    @include retina {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 703px auto;
+    }
   }
 
   @include desktop {
     background-image: url("../img/iphone-hand-desktop@1x.png");
+
+    @include retina {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1049px auto;
+    }
     background-position: 15px bottom;
     padding-top: 130px;
     padding-bottom: 124px;

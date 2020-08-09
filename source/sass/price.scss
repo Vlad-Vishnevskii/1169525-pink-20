@@ -26,13 +26,7 @@
   font-size: 16px;
   line-height: 30px;
   border: 1px solid $light-grey;
-
-  &::after {
-    content: url("../img/hit.png");
-    position: absolute;
-    left: 20px;
-    top: 0;
-  }
+  overflow: hidden;
 
   @include tablets {
     &::after {
@@ -40,6 +34,7 @@
     }
     min-height: 81px;
     padding: 0;
+    position: relative;
   }
 
   @include desktop {
@@ -119,6 +114,7 @@
 
     @include tablets {
       justify-content: start;
+      text-transform: none;
     }
 
     @include desktop {
@@ -223,23 +219,35 @@
   @include desktop {
     border-right: none;
     border-left: none;
-    position: relative;
+  }
+}
+
+.price__title_hit::after {
+  content: url("../img/hit-small.png");
+  position: absolute;
+  display: block;
+  top: 2px;
+  left: 22px;
+
+  @include tablets {
+    content: "Хит";
+    color: $white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    background-color: $pink;
+    transform: rotate(-45deg) translate(-32px, -12px);
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: normal;
   }
 
-  &::before {
-    @include tablets {
-      content: url("../img/hit-small.png");
-      position: absolute;
-      left: 1px;
-      top: 1px;
-    }
-
-    @include desktop {
-      content: url("../img/hit.png");
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+  @include desktop {
+    width: 109px;
+    transform: rotate(-45deg) translate(-33px, -7px);
+    font-size: 12px;
+    line-height: 23px;
   }
 }
 
