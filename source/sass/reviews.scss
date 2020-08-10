@@ -38,20 +38,6 @@
   @include desktop {
     max-width: 690px;
     position: relative;
-
-    &::before {
-      content: url("../img/left_arrow.svg");
-      position: absolute;
-      top: 46px;
-      left: -126px;
-    }
-
-    &::after {
-      content: url("../img/right_arrow.svg");
-      position: absolute;
-      top: 46px;
-      right: -124px;
-    }
   }
 }
 
@@ -109,6 +95,7 @@
 .reviews__toggles {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .reviews__text {
@@ -119,4 +106,25 @@
     font-size: 18px;
     line-height: 30px;
   }
+}
+
+
+.reviews__desktop-arrows {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.reviews__left-arrow {
+  position: absolute;
+  top: 216px;
+  left: 0;
+}
+
+.reviews__right-arrow {
+  position: absolute;
+  top: 216px;
+  right: 0;
 }

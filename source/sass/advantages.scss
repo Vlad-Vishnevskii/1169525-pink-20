@@ -136,6 +136,17 @@
     left: -25px;
     display: block;
     margin-bottom: 45px;
+
+    @include retina {
+      content: "";
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 292px;
+      width: 312px;
+      height: 307px;
+      top: -4px;
+      left: -26px;
+    }
   }
 }
 
@@ -147,6 +158,17 @@
     left: -20px;
     display: block;
     margin-bottom: 45px;
+
+    @include retina {
+      content: "";
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 292px;
+      width: 312px;
+      height: 307px;
+      top: -4px;
+      left: -26px;
+    }
   }
 }
 
@@ -159,6 +181,17 @@
     left: -20px;
     display: block;
     margin-bottom: 45px;
+
+    @include retina {
+      content: "";
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 292px;
+      width: 312px;
+      height: 307px;
+      top: -4px;
+      left: -26px;
+    }
   }
 }
 

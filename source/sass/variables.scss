@@ -33,3 +33,10 @@ $mobile-width: 320px;
     @content;
   }
 }
+
+// retina mixin
+@mixin retina {
+  @media screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
