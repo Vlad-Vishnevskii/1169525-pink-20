@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <svg style="display: none">
@@ -65,8 +66,8 @@
         </div>
       </nav>
 
-      <section class="description container description_page-from">
-        <h2 class="description__header description__header_page-from description__header_form-page">
+      <section class="description container description_page-form">
+        <h2 class="description__header description__header_padding-form-page">
           Конкурс на самое
           безбашенное
           путешествие с Пинк
@@ -85,7 +86,7 @@
           миль на вашу бонусную карту!
         </h3>
         <form class="form" action="https://echo.htmlacademy.ru">
-          <div class="form__section">
+          <div class="form__section form__section_name">
             <label class="form__field">
               <span class="form__field-title">Фамилия:</span><br>
               <input class="form__field-text" type="text" name="author-surname" placeholder="Укажите фамилию *" required>
@@ -99,38 +100,38 @@
               <input class="form__field-text" type="text" name="author-middle-name" placeholder="Ну и отчество тоже">
             </label>
           </div>
-          <div class="form__section">
-            <div class="form__field-title form__title">Ваши безбашенные
+          <div class="form__section form__section_checkbox">
+            <div class="form__field-title form__field-title_checkbox form__title">Ваши безбашенные
               достижения в путешествии
             </div>
             <ul class="form__advance-list">
               <li class="form__advance-item">
-                <input class="form__checkbox" type="checkbox" name="selfie" checked>
-                <label class="form__advance-text">Сделал селфи с акулой</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                <label for="selfie" class="form__advance-text">Сделал селфи с акулой</label>
               </li>
               <li class="form__advance-item">
-                <input class="form__checkbox" type="checkbox" name="beach" checked>
-                <label class="form__advance-text">Обгорел на пляже</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="beach" id="beach" checked>
+                <label for="beach" class="form__advance-text">Обгорел на пляже</label>
               </li>
               <li class="form__advance-item">
-                <input class="form__checkbox" type="checkbox" name="chuck-norris">
-                <label class="form__advance-text">Видел Чака Норриса</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                <label for="chuck-norris" class="form__advance-text">Видел Чака Норриса</label>
               </li>
               <li class="form__advance-item">
-                <input class="form__checkbox" type="checkbox" name="souvenir">
-                <label class="form__advance-text">Накупил сувениров</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <label for="souvenir" class="form__advance-text">Накупил сувениров</label>
               </li>
               <li class="form__advance-item">
-                <input class="form__checkbox" type="checkbox" name="tower" checked>
-                <label class="form__advance-text">Удержал башню</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="tower" id="tower" checked>
+                <label for="tower" class="form__advance-text">Удержал башню</label>
               </li>
               <li class="form__advance-item">
-                <input class="form__checkbox" type="checkbox" name="hotel">
-                <label class="form__advance-text">Разгромил отель</label>
+                <input class="visually-hidden form__checkbox" type="checkbox" name="hotel" id="hotel">
+                <label for="hotel" class="form__advance-text">Разгромил отель</label>
               </li>
             </ul>
           </div>
-          <div class="form__section">
+          <div class="form__section form__section_contacts">
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
                 <label class="form__field-title">
@@ -146,37 +147,31 @@
               </li>
             </ul>
           </div>
-          <div class="form__section">
-            <div class="form__field-title form__title">
+          <div class="form__section form__section_versions">
+            <div class="form__field-title form__title form__title_center">
               С каким приложением<br>
               путешествовали?
             </div>
             <ul class="form__versions-list">
               <li class="form__versions-item">
-                <label class="form__field-title">
-                  <input class="form__field-radio" type="radio" name="os" value="ios" checked>
-                  <span class="form_radio-text">Pink для iOS</span>
-                </label>
+                <input class="visually-hidden form__field-radio" type="radio" name="os" value="ios" id="ios" checked>
+                <label for="ios" class="form__radio-text">Pink для iOS </label>
               </li>
               <li class="form__versions-item">
-                <label class="form__field-title">
-                  <input class="form__field-radio" type="radio" name="os" value="android">
-                <span class="form_radio-text">Pink на Android</span>
-                </label>
+                <input class="visually-hidden form__field-radio" type="radio" name="os" id="android" value="android">
+                <label for="android" class="form__radio-text">Pink на Android </label>
               </li>
               <li class="form__versions-item">
-                <label class="form__field-title">
-                  <input class="form__field-radio" type="radio" name="os" value="windows">
-                <span class="form_radio-text">Windows Phone</span>
-                </label>
+                <input class="visually-hidden form__field-radio" type="radio" name="os" value="windows" id="windows">
+                <label for="windows" class="form__radio-text">Windows Phone </label>
               </li>
             </ul>
           </div>
-          <div class="form__section">
-            <div class="form__field-title form__title">
+          <div class="form__section form__section_story">
+            <div class="form__field-title form__title form__title_center">
               Опишите свои эмоции
             </div>
-            <textarea class="form__story-text" name="story"  rows="8">Можно прям в красках, не стесняясь в выражениях
+            <textarea class="form__story-text" name="story"  rows="5">Можно прям в красках, не стесняясь в выражениях
             </textarea>
           </div>
           <button class="form_button button" type="submit">
