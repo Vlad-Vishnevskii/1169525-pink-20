@@ -10,7 +10,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
-// const del = require("del");
+const del = require("del");
 
 
 // Styles
@@ -56,14 +56,13 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
 
-
-
 // images
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
 }
@@ -72,14 +71,12 @@ exports.images = images;
 
 //webp
 
-
 const webp_convert = () => {
- return gulp.src("source/img/**/*.{png,jpg}")
- .pipe(webp({quality: 90}))
- .pipe(gulp.dest("source/img"))
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
 }
 exports.webp_convert = webp_convert;
-
 
 // svg-sprite
 
@@ -88,17 +85,18 @@ const sprite = () => {
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"))
- }
- exports.sprite = sprite;
+  }
+  exports.sprite = sprite;
 
- // html
- const html = () => {
+// html
+
+const html = () => {
   return gulp.src("source/*.html")
   .pipe(gulp.dest("build"))
- }
+  }
  exports.html = html;
 
-  //copy
+//copy
 
  const copy = () => {
   return gulp.src([
@@ -109,29 +107,28 @@ const sprite = () => {
   ], {
     base: "source"
   })
- .pipe(gulp.dest("build"));
- };
+  .pipe(gulp.dest("build"));
+  };
 
- exports.copy = copy;
+  exports.copy = copy;
 
+// del
+
+const clean = () => {
+  return del("build");
+};
 
 // build
 
   const build  =  gulp.series(
-  // clean",
-  copy,
-  styles,
-  sprite,
-  html
- );
+    clean,
+    copy,
+    styles,
+    sprite,
+    html
+  );
 
- exports.build = build;
-
-// del
-
-//  const clean = () => {
-//   return del("build");
-//  };
+  exports.build = build;
 
 exports.default = gulp.series(
   build, server, watcher

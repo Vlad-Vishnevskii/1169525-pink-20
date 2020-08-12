@@ -41,5 +41,9 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "imagemin-jpegtran": "^7.0.0"
   }
 }
