@@ -224,4 +224,20 @@
   padding-bottom: 44px;
   font-size: 24px;
   line-height: 33px;
+
+  @include tablets {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 28px;
+  }
+}
+
+.description_page-form {
+  @include tablets {
+  padding-top: 62px;
+  padding-bottom: 0;
+  }
 }

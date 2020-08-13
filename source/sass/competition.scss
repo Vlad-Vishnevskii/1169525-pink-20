@@ -14,6 +14,16 @@
   padding-left: 20px;
   padding-right: 20px;
   color: $extra-light-black;
+
+  @include tablets {
+    max-width: 600px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 73px;
+  }
 }
 
 .form__section {
@@ -24,15 +34,65 @@
   &:nth-of-type(2),
   &:nth-of-type(4) {
     background-color: $grey;
+    @include tablets {
+      background: none;
+    }
+  }
+}
+
+.comptition__request {
+  display: none;
+
+  @include tablets {
+    display: inline;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .form__section_name {
   padding-bottom: 25px;
+
+  @include tablets {
+    padding-top: 29px;
+    order: 0;
+    padding-bottom: 18px;
+  }
+}
+
+.form__section_name br {
+  @include tablets {
+  display: none;
+  }
 }
 
 .form__section_checkbox {
   padding-top: 19px;
+
+  @include tablets {
+    order: 3;
+    border: 2px solid $light-grey;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 68px;
+    position: relative;
+  }
+}
+
+.form__field {
+  @include tablets {
+  display: flex;
+  align-items: baseline;
+  }
 }
 
 .form__field-title {
@@ -42,6 +102,17 @@
   font-size: 14px;
   line-height: 30px;
   padding-left: 24px;
+
+  @include tablets {
+    padding-left: 0;
+    margin-right: 18px;
+  }
+}
+
+.form__field-title br {
+  @include tablets {
+    display: none;
+  }
 }
 
 .form__field-title_checkbox {
@@ -49,6 +120,14 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 42px;
+
+  @include tablets {
+    position: absolute;
+    top: -28px;
+    left: 88px;
+    width: 436px;
+    background-color: $white;
+  }
 }
 
 .form__field-text {
@@ -65,6 +144,12 @@
   margin-top: 5px;
   border: 2px solid $light-grey;
   border-radius: 1px;
+
+  @include tablets {
+    margin-bottom: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .form__advance-list {
@@ -77,6 +162,12 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 47px;
+
+  @include tablets {
+    padding-top: 37px;
+    padding-left: 55px;
+    padding-bottom: 53px;
+  }
 }
 
 .form__title {
@@ -85,6 +176,10 @@
   text-align: center;
   max-width: 244px;
   padding-top: 20px;
+
+  @include tablets {
+    max-width: 436px;
+  }
 }
 
 .form__advance-item {
@@ -119,6 +214,34 @@
 
 .form__section_contacts {
   padding-bottom: 25px;
+
+  @include tablets {
+    order: 2;
+    border: 2px solid $light-grey;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 65px;
+    position: relative;
+  }
+}
+
+.form_contacts-title {
+  display: none;
+
+  @include tablets {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    font-weight: normal;
+    position: absolute;
+    top: -25px;
+    left: 187px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $white;
+  }
 }
 
 .form__contacts-list {
@@ -126,11 +249,60 @@
   padding: 0;
   margin: 0;
   margin-top: 32px;
+
+  @include tablets {
+    margin-top: 40px;
+    padding: 0 37px;
+  }
+}
+
+.form__contacts-item {
+  @include tablets {
+    display: flex;
+    flex-direction: column-reverse;
+
+    &:first-of-type {
+      margin-bottom: 24px;
+    }
+
+    &:first-of-type .form_field-contacts {
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 435px -1px;
+    }
+
+    &:nth-of-type(2) .form_field-contacts {
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-position: 435px -1px;
+    }
+  }
+}
+
+.form_field-contacts {
+  @include tablets {
+    margin-bottom: 9px;
+  }
+}
+
+.form_title-margin {
+  @include tablets {
+  margin-left: 18px;
+  }
 }
 
 .form__section_versions {
   padding-top: 20px;
   padding-bottom: 48px;
+
+  @include tablets {
+    order: 1;
+    width: 616px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid $light-grey;
+    padding-bottom: 61px;
+  }
 }
 
 .form__versions-list {
@@ -150,6 +322,10 @@
   &:last-of-type {
     margin-top: 43px;
   }
+
+  @include tablets {
+    margin-top: -2px;
+  }
 }
 
 .form__radio-text {
@@ -159,6 +335,10 @@
   text-transform: none;
   margin-left: 70px;
   position: relative;
+
+  @include tablets {
+    margin-left: 97px;
+  }
 }
 
 .form__field-radio + .form__radio-text::before {
@@ -169,6 +349,12 @@
   height: 39px;
   left: -70px;
   top: -6px;
+
+  @include tablets {
+    left: -61px;
+    width: 41px;
+    height: 41px;
+  }
 }
 
 .form__field-radio:checked + .form__radio-text::before {
@@ -177,6 +363,18 @@
 
 .form__section_story {
   padding-top: 20px;
+
+  @include tablets {
+    order: 4;
+    border: 2px solid $light-grey;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 65px;
+    padding-left: 57px;
+    padding-right: 56px;
+    padding-top: 10px;
+    padding-bottom: 44px;
+  }
 }
 
 .form__story-text {
@@ -194,6 +392,23 @@
   box-sizing: border-box;
   margin-top: 14px;
   padding-top: 12px;
+
+  @include tablets {
+    margin-top: 0;
+    height: 192px;
+  }
+}
+
+.form_down {
+  order: 5;
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 49px;
+  }
 }
 
 .form_button {
@@ -208,6 +423,13 @@
   margin-right: auto;
   padding-left: 45px;
   padding-right: 45px;
+
+  @include tablets {
+    margin-top: 63px;
+    margin-left: 18px;
+    margin-right: 0;
+    width: 303px;
+  }
 }
 
 .from__notation {
@@ -217,6 +439,13 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 34px;
+
+  @include  tablets{
+    max-width: none;
+    width: initial;
+    margin: 0;
+    margin-left: 137px;
+  }
 }
 
 .form__star {
@@ -227,4 +456,18 @@
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;
+
+  @include tablets {
+    position: relative;
+    max-width: 370px;
+    top: -49px;
+    background-color: $white;
+  }
+}
+
+.form__field-title-story {
+  @include tablets {
+  max-width: 260px;
+  top: -37px;
+  }
 }
