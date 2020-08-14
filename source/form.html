@@ -62,7 +62,7 @@
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link" href="#">
-                Html Academy
+                HTML Academy
               </a>
             </li>
           </ul>
@@ -89,7 +89,7 @@
           миль на вашу бонусную карту!
           <span class="comptition__request">Пожалуйста, заполните форму ниже:</span>
         </h3>
-        <form class="form" action="https://echo.htmlacademy.ru">
+        <form class="form container form_no-padding-modile" action="https://echo.htmlacademy.ru">
           <div class="form__section form__section_name">
             <label class="form__field">
               <span class="form__field-title">Фамилия:</span><br>
@@ -136,8 +136,8 @@
             </ul>
           </div>
           <div class="form__section form__section_contacts">
+            <h2 class="form_contacts-title" >Контактная информация</h2>
             <ul class="form__contacts-list">
-              <h2 class="form_contacts-title" >Контактная информация</h2>
               <li class="form__contacts-item">
                 <label for="tel" class="form__field-title form_title-margin">
                   Номер телефона
@@ -184,7 +184,7 @@
             <button class="form_button button" type="submit">
               Отправить форму
             </button>
-            <p class="from__notation container"><span class="form__star">*</span> — обязательные поля</p>
+            <p class="from__notation container"><span class="form__star">*</span> — обязательные <span class="form_desctop-notation-text">для заполнения</span> поля</p>
           </div>
         </form>
       </section>
@@ -192,14 +192,14 @@
 
     </main>
 
-    <footer class="page-footer container">
-      <a class="page-footer__logo">
+    <footer class="page-footer container page-footer_padding-photopage-desctop">
+      <a class="page-footer__logo page-footer__logo_margin-form-page ">
         <picture>
           <source srcset="./img/logo-pink-blue-desktop.svg" media="(min-width: 1200px)">
-          <img src="./img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
+          <img class="page-footer__logo_width" src="./img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink">
         </picture>
       </a>
-      <ul class="page-footer__social-buttons social-buttons ">
+      <ul class="page-footer__social-buttons social-buttons page-footer__copyright_margin-form-page">
         <li class="social-buttons__item social-buttons__icon_twitter">
           <a href="#" class="social-buttons__link"><span class="visually-hidden">twitter</span></a>
         </li>
@@ -214,7 +214,7 @@
       <div class="page-footer__copyright сopyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="./img/htmlacademy.svg" width="27" height="34" alt="Academy-logo">
+          <img class="copyright__logo" src="./img/htmlacademy.svg" width="27" height="34" alt="Academy-logo">
         </a>
       </div>
     </footer>

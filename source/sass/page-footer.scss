@@ -100,6 +100,11 @@
   @include tablets {
     margin-top: 6px;
   }
+
+  @include desktop {
+    margin-top: 0;
+    align-items: center;
+  }
 }
 
 .copyright__text {
@@ -109,12 +114,42 @@
   line-height: 18px;
   margin-top: 18px;
 
+  @include tablets {
+    margin-top: 11px;
+  }
+
   @include desktop {
     font-size: 18px;
     line-height: 18px;
+    margin-right: 6px;
   }
 }
 
-.copyright__link {
+.copyright__logo {
   margin-top: 10px;
+}
+
+@include desktop {
+  .copyright__link {
+    margin-top: 10px;
+  }
+
+  .page-footer_padding-photopage-desctop {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__logo_margin-form-page {
+    margin-right: 238px;
+  }
+
+  .copyright__logo {
+    width: 57px;
+    height: 34px;
+  }
+
+  .page-footer__logo_width {
+    width: 171px;
+    height: 40px;
+  }
 }

@@ -24,6 +24,10 @@
     margin-right: auto;
     padding-top: 73px;
   }
+
+  @include desktop {
+    max-width: 844px;
+  }
 }
 
 .form__section {
@@ -34,6 +38,7 @@
   &:nth-of-type(2),
   &:nth-of-type(4) {
     background-color: $grey;
+
     @include tablets {
       background: none;
     }
@@ -52,11 +57,17 @@
   display: flex;
   flex-direction: column;
 
-  @include tablets {
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
   }
+}
+
+.form_no-padding-modile {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .form__section_name {
@@ -67,11 +78,19 @@
     order: 0;
     padding-bottom: 18px;
   }
+
+  @include desktop {
+    padding-top: 42px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 433px;
+    padding-bottom: 17px;
+  }
 }
 
 .form__section_name br {
   @include tablets {
-  display: none;
+    display: none;
   }
 }
 
@@ -86,12 +105,18 @@
     margin-top: 68px;
     position: relative;
   }
+
+  @include desktop {
+    width: 100%;
+    margin: 0;
+    margin-top: 65px;
+  }
 }
 
 .form__field {
   @include tablets {
-  display: flex;
-  align-items: baseline;
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -127,6 +152,10 @@
     left: 88px;
     width: 436px;
     background-color: $white;
+  }
+
+  @include desktop {
+    left: 250px;
   }
 }
 
@@ -168,6 +197,12 @@
     padding-left: 55px;
     padding-bottom: 53px;
   }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 9px;
+  }
 }
 
 .form__title {
@@ -191,11 +226,49 @@
   }
 }
 
+@include desktop {
+  .form__advance-item:first-of-type {
+    order: 0;
+    margin-right: 73px;
+  }
+
+  .form__advance-item:nth-of-type(2) {
+    order: 3;
+    margin-right: 113px;
+  }
+
+  .form__advance-item:nth-of-type(3) {
+    order: 1;
+    margin-right: 72px;
+  }
+
+  .form__advance-item:nth-of-type(4) {
+    order: 4;
+    margin-right: 80px;
+  }
+
+  .form__advance-item:nth-of-type(5) {
+    order: 2;
+  }
+
+  .form__advance-item:nth-of-type(6) {
+    order: 5;
+
+    & .form__advance-text {
+      margin-left: 42px;
+    }
+  }
+}
+
 .form__advance-text {
   font-size: 18px;
   line-height: 30px;
   margin-left: 39px;
   cursor: pointer;
+
+  @include desktop {
+    margin-left: 43px;
+  }
 }
 
 .form__checkbox + .form__advance-text::before {
@@ -223,6 +296,12 @@
     margin-top: 65px;
     position: relative;
   }
+
+  @include desktop {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 12px;
+  }
 }
 
 .form_contacts-title {
@@ -242,6 +321,12 @@
     padding-right: 20px;
     background-color: $white;
   }
+
+  @include desktop {
+    left: 339px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .form__contacts-list {
@@ -254,6 +339,12 @@
     margin-top: 40px;
     padding: 0 37px;
   }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .form__contacts-item {
@@ -263,19 +354,35 @@
 
     &:first-of-type {
       margin-bottom: 24px;
+
+      @include desktop {
+        margin-bottom: 0;
+      }
     }
 
     &:first-of-type .form_field-contacts {
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: 435px -1px;
+
+      @include desktop {
+        background-position: 315px -1px;
+      }
     }
 
     &:nth-of-type(2) .form_field-contacts {
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       background-position: 435px -1px;
+
+      @include desktop {
+        background-position: 315px -1px;
+      }
     }
+  }
+
+  @include desktop {
+    width: 377px;
   }
 }
 
@@ -287,7 +394,11 @@
 
 .form_title-margin {
   @include tablets {
-  margin-left: 18px;
+    margin-left: 18px;
+  }
+
+  @include desktop {
+    margin-left: 20px;
   }
 }
 
@@ -302,6 +413,14 @@
     margin-right: auto;
     border: 2px solid $light-grey;
     padding-bottom: 61px;
+  }
+
+  @include desktop {
+    width: 434px;
+    margin: 0;
+    margin-top: 39px;
+    padding-bottom: 0;
+    min-height: 301px;
   }
 }
 
@@ -321,6 +440,10 @@
 
   &:last-of-type {
     margin-top: 43px;
+
+    @include desktop {
+      margin-top: 47px;
+    }
   }
 
   @include tablets {
@@ -338,6 +461,10 @@
 
   @include tablets {
     margin-left: 97px;
+  }
+
+  @include desktop {
+    margin-left: 112px;
   }
 }
 
@@ -375,6 +502,14 @@
     padding-top: 10px;
     padding-bottom: 44px;
   }
+
+  @include desktop {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 4px;
+    padding-bottom: 38px;
+  }
 }
 
 .form__story-text {
@@ -397,6 +532,10 @@
     margin-top: 0;
     height: 192px;
   }
+
+  @include desktop {
+    height: 127px;
+  }
 }
 
 .form_down {
@@ -408,6 +547,13 @@
     flex-direction: row;
     align-items: baseline;
     padding-bottom: 49px;
+  }
+
+  @include desktop {
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 0;
   }
 }
 
@@ -430,6 +576,10 @@
     margin-right: 0;
     width: 303px;
   }
+
+  @include desktop {
+    margin-left: -1px;
+  }
 }
 
 .from__notation {
@@ -440,11 +590,15 @@
   text-align: center;
   margin-top: 34px;
 
-  @include  tablets{
+  @include tablets {
     max-width: none;
     width: initial;
     margin: 0;
     margin-left: 137px;
+  }
+
+  @include desktop {
+    margin-top: 82px;
   }
 }
 
@@ -467,7 +621,19 @@
 
 .form__field-title-story {
   @include tablets {
-  max-width: 260px;
-  top: -37px;
+    max-width: 260px;
+    top: -37px;
+  }
+
+  @include tablets {
+    top: -34px;
+  }
+}
+
+.form_desctop-notation-text {
+  display: none;
+
+  @include desktop {
+    display: inline;
   }
 }

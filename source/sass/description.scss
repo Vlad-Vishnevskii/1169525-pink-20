@@ -217,6 +217,15 @@
 
 .description_page-form {
   background: none;
+
+  @include tablets {
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    padding-top: 86px;
+  }
 }
 
 .description__header_padding-form-page {
@@ -233,11 +242,9 @@
     margin-right: auto;
     padding-bottom: 28px;
   }
-}
 
-.description_page-form {
-  @include tablets {
-  padding-top: 62px;
-  padding-bottom: 0;
+  @include desktop {
+    max-width: 750px;
+    padding-bottom: 55px;
   }
 }
