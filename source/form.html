@@ -22,7 +22,7 @@
     <header class="header">
       <nav class="main-nav container">
         <div class="main-nav__logo-wrapper">
-        <a class="header__logo">
+        <a href="#" class="header__logo">
           <picture>
             <source srcset="./img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
             <source srcset="./img/logo-pink-white-tablet.svg" media="(min-width: 768px)">
@@ -46,22 +46,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link" href="index.html">
+              <a tabindex="1" class="menu-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="photo.html">
+              <a tabindex="1" class="menu-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">
+              <a tabindex="1" class="menu-list__link" href="#">
                 Конкурс
               </a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#">
+              <a tabindex="1" class="menu-list__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -93,15 +93,15 @@
           <div class="form__section form__section_name">
             <label class="form__field">
               <span class="form__field-title">Фамилия:</span><br>
-              <input class="form__field-text" type="text" name="author-surname" placeholder="Укажите фамилию *" required>
+              <input class="form__field-text" type="text" name="author-surname" tabindex="2" placeholder="Укажите фамилию *" required>
             </label>
             <label class="form__field">
               <br><span class="form__field-title">Имя:</span><br>
-              <input class="form__field-text" type="text" name="author-name" placeholder="Введите ваше имя *" required>
+              <input class="form__field-text" type="text" name="author-name" tabindex="2" placeholder="Введите ваше имя *" required>
             </label>
             <label class="form__field">
               <br><span class="form__field-title">Отчество:</span><br>
-              <input class="form__field-text" type="text" name="author-middle-name" placeholder="Ну и отчество тоже">
+              <input class="form__field-text" type="text" name="author-middle-name" tabindex="2" placeholder="Ну и отчество тоже">
             </label>
           </div>
           <div class="form__section form__section_checkbox">
@@ -110,27 +110,27 @@
             </div>
             <ul class="form__advance-list">
               <li class="form__advance-item">
-                <input class="visually-hidden form__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                <input class="visually-hidden form__checkbox" tabindex="5" type="checkbox" name="selfie" id="selfie" checked>
                 <label for="selfie" class="form__advance-text">Сделал селфи с акулой</label>
               </li>
               <li class="form__advance-item">
-                <input class="visually-hidden form__checkbox" type="checkbox" name="beach" id="beach" checked>
+                <input class="visually-hidden form__checkbox" tabindex="5" type="checkbox" name="beach" id="beach" checked>
                 <label for="beach" class="form__advance-text">Обгорел на пляже</label>
               </li>
               <li class="form__advance-item">
-                <input class="visually-hidden form__checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
+                <input class="visually-hidden form__checkbox" tabindex="5" type="checkbox" name="chuck-norris" id="chuck-norris">
                 <label for="chuck-norris" class="form__advance-text">Видел Чака Норриса</label>
               </li>
               <li class="form__advance-item">
-                <input class="visually-hidden form__checkbox" type="checkbox" name="souvenir" id="souvenir">
+                <input class="visually-hidden form__checkbox" tabindex="5" type="checkbox" name="souvenir" id="souvenir">
                 <label for="souvenir" class="form__advance-text">Накупил сувениров</label>
               </li>
               <li class="form__advance-item">
-                <input class="visually-hidden form__checkbox" type="checkbox" name="tower" id="tower" checked>
+                <input class="visually-hidden form__checkbox" tabindex="5" type="checkbox" name="tower" id="tower" checked>
                 <label for="tower" class="form__advance-text">Удержал башню</label>
               </li>
               <li class="form__advance-item">
-                <input class="visually-hidden form__checkbox" type="checkbox" name="hotel" id="hotel">
+                <input class="visually-hidden form__checkbox" tabindex="5" type="checkbox" name="hotel" id="hotel">
                 <label for="hotel" class="form__advance-text">Разгромил отель</label>
               </li>
             </ul>
@@ -142,14 +142,14 @@
                 <label for="tel" class="form__field-title form_title-margin">
                   Номер телефона
                 </label>
-                <input class="form__field-text form_field-contacts" type="text" id="tel" name="telephone" placeholder="Номер, пожалуйста">
+                <input class="form__field-text form_field-contacts" tabindex="4" type="text" id="tel" name="telephone" placeholder="Номер, пожалуйста">
 
               </li>
               <li class="form__contacts-item">
                 <label for="email" class="form__field-title form_title-margin">
                   Адрес почты
                 </label>
-                <input class="form__field-text form_field-contacts" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                <input class="form__field-text form_field-contacts" tabindex="4" type="email" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </div>
@@ -160,15 +160,15 @@
             </div>
             <ul class="form__versions-list">
               <li class="form__versions-item">
-                <input class="visually-hidden form__field-radio" type="radio" name="os" value="ios" id="ios" checked>
+                <input class="visually-hidden form__field-radio" tabindex="3" type="radio" name="os" value="ios" id="ios" checked>
                 <label for="ios" class="form__radio-text">Pink для iOS </label>
               </li>
               <li class="form__versions-item">
-                <input class="visually-hidden form__field-radio" type="radio" name="os" id="android" value="android">
+                <input class="visually-hidden form__field-radio" tabindex="3" type="radio" name="os" id="android" value="android">
                 <label for="android" class="form__radio-text">Pink на Android </label>
               </li>
               <li class="form__versions-item">
-                <input class="visually-hidden form__field-radio" type="radio" name="os" value="windows" id="windows">
+                <input class="visually-hidden form__field-radio" tabindex="3" type="radio" name="os" value="windows" id="windows">
                 <label for="windows" class="form__radio-text">Windows Phone </label>
               </li>
             </ul>
@@ -192,7 +192,7 @@
 
     </main>
 
-    <footer class="page-footer container page-footer_padding-photopage-desctop">
+    <footer class="page-footer container page-footer_padding-form">
       <a class="page-footer__logo page-footer__logo_margin-form-page ">
         <picture>
           <source srcset="./img/logo-pink-blue-desktop.svg" media="(min-width: 1200px)">
@@ -200,21 +200,23 @@
         </picture>
       </a>
       <ul class="page-footer__social-buttons social-buttons page-footer__copyright_margin-form-page">
-        <li class="social-buttons__item social-buttons__icon_twitter">
-          <a href="#" class="social-buttons__link"><span class="visually-hidden">twitter</span></a>
+        <li>
+          <a href="#" class="social-buttons__item social-buttons__icon_twitter social-buttons__link"><span class="visually-hidden">twitter</span></a>
         </li>
-        <li class="social-buttons__item social-buttons__icon_facebook">
-          <a href="#" class="social-buttons__link"><span class="visually-hidden">facebook</span></a>
+        <li>
+          <a href="#" class="social-buttons__item social-buttons__icon_facebook social-buttons__link"><span class="visually-hidden">facebook</span></a>
         </li>
-        <li class="social-buttons__item social-buttons__icon_youtube">
-          <a href="#" class="social-buttons__link"><span class="visually-hidden">youtube</span></a>
+        <li>
+          <a href="#" class="social-buttons__item social-buttons__icon_youtube social-buttons__link"><span class="visually-hidden">youtube</span></a>
         </li>
       </ul>
 
       <div class="page-footer__copyright сopyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text copyright__text_margin-photo-page">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="./img/htmlacademy.svg" width="27" height="34" alt="Academy-logo">
+          <svg class="copyright__logo copyright__logo_no-margin" width="27" height="34">
+            <use xlink:href="#academy-logo"></use>
+          </svg>
         </a>
       </div>
     </footer>

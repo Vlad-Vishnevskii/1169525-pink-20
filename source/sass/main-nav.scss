@@ -126,6 +126,15 @@
 .menu-list__link {
   text-decoration: none;
   color: $white;
+  outline: none;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 
   @include desktop () {
     text-transform: none;

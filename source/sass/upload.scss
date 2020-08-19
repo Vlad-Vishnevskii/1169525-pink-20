@@ -1,9 +1,13 @@
 @import "./variables.scss";
 
 .upload {
-  padding-top: 7px;
+  padding-top: 3px;
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
+
+  @include tablets {
+    padding-top: 8px;
+  }
 
   @include desktop {
     padding-top: 0;
