@@ -1,5 +1,6 @@
 // Colors
 $black: #000000;
+$black-opacity: rgba(0, 0, 0, 0.3);
 $white: #ffffff;
 $light-black: #1d2631;
 $extra-light-black: #283645;
@@ -21,6 +22,12 @@ $mobile-width: 320px;
 //mobile mixin
 @mixin desktop {
   @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin not-desktop {
+  @media screen and (max-width: 1199px) {
     @content;
   }
 }
