@@ -43,10 +43,6 @@
   @include tablets {
     margin-left: 0;
   }
-
-  @include desktop {
-    // margin-right: 225px;
-  }
 }
 
 .social-buttons__item {
@@ -130,12 +126,16 @@
 .copyright__logo {
   margin-top: 10px;
   fill: $pink;
+}
 
-  &:hover {
+.copyright__link {
+  outline: none;
+
+  &:hover .copyright__logo {
     fill: $extra-light-black;
   }
 
-  :focus {
+  &:focus .copyright__logo {
     fill: $extra-light-black;
     opacity: 0.3;
   }
