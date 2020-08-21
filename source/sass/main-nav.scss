@@ -68,12 +68,32 @@
   background: none;
   border: none;
   padding: 0;
+  fill: $white;
+  outline: none;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:focus {
+    fill: $pink-opacity;
+  }
 }
 
 .main-nav__close-button {
   background: none;
   border: none;
   padding: 0;
+  fill: $white;
+  outline: none;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:focus {
+    fill: $pink-opacity;
+  }
 
   @include desktop {
     display: none;
@@ -163,10 +183,22 @@
   }
 
   &:focus {
+    color: $pink;
     opacity: 0.3;
   }
 
   @include desktop () {
     text-transform: none;
+
+    &:focus {
+      color: $white;
+      opacity: 0.3;
+    }
+  }
+}
+
+.menu-list__item_active {
+  @include desktop {
+    border-bottom: 2px solid $white;
   }
 }

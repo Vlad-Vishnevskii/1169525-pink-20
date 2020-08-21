@@ -9,12 +9,14 @@
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   text-align: center;
-  padding-top: 33px;
+  padding-top: 23px;
+  border-radius: 5px;
 
   @include tablets {
     max-width: 460px;
     min-height: 363px;
     top: 200px;
+    padding-top: 0;
   }
 
   @include desktop {
@@ -93,10 +95,15 @@
 
 .popup_error {
   display: none;
+  min-height: 290px;
+
+  @include tablets {
+    min-height: 362px;
+  }
 }
 
 .popup-success {
-  display: block;
+  display: none;
 }
 
 .popup_wrapper-grey {

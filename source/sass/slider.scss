@@ -25,6 +25,14 @@
   border: 3px solid $white;
   overflow: hidden;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.1;
+  }
+
   &:last-of-type {
     margin-right: 0;
   }
@@ -39,4 +47,13 @@
   background-color: $white;
   border: 3px solid $black;
   opacity: 1;
+  outline: none;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
 }
