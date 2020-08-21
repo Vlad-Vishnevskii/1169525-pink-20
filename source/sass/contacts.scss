@@ -158,12 +158,12 @@
   @include retina {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
-  min-height: 200px;
+  height: 200px;
   background-size: cover;
 
   @include tablets {
     background-image: url("../img/bg-map-tablet@1x.jpg");
-    min-height: 374px;
+    height: 374px;
 
     @include retina {
       background-image: url("../img/bg-map-tablet@2x.jpg");
@@ -172,7 +172,7 @@
 
   @include desktop {
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    min-height: 502px;
+    height: 502px;
 
     @include retina {
       background-image: url("../img/bg-map-desktop@2x.jpg");
@@ -189,6 +189,7 @@
   position: absolute;
   clip-path: polygon(100% 0, 0 0, 50% 17%);
   top: -1px;
+  z-index: 5;
 
   @include desktop {
     clip-path: polygon(100% 0, 0 0, 50% 21%);

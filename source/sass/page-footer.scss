@@ -38,10 +38,12 @@
   margin-bottom: 29px;
   padding: 0;
   display: flex;
-  margin-left: 53px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablets {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 

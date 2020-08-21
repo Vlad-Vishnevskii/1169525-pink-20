@@ -1,18 +1,36 @@
 .popup {
-  max-width: 460px;
-  min-height: 363px;
+  max-width: 320px;
+  min-height: 300px;
   position: fixed;
-  top: 200px;
+  top: 100px;
   left: 0;
   right: 0;
   margin: auto;
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  border-radius: 5px;
   text-align: center;
+  padding-top: 33px;
+
+  @include tablets {
+    max-width: 460px;
+    min-height: 363px;
+    top: 200px;
+  }
+
+  @include desktop {
+    max-width: 780px;
+    min-height: 377px;
+  }
 }
 
 .popup__title {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 27px;
+
+
+  @include tablets {
   max-width: 255px;
   margin-left: auto;
   margin-right: auto;
@@ -22,28 +40,55 @@
   color: $black;
   margin-top: 40px;
   margin-bottom: 24px;
+  }
+
+  @include desktop {
+    max-width: 600px;
+  }
 }
 
 .popup__text {
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 14px;
   line-height: 24px;
   color: $extra-light-black;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  @include tablets {
+  max-width: 300px;
+  font-size: 18px;
+  line-height: 24px;
+  }
+
+  @include desktop {
+    max-width: 414px;
+  }
 }
 
 .popup__button {
   background-color: $green;
   border-radius: 0;
   text-transform: uppercase;
-  width: 300px;
-  height: 62px;
-  margin-top: 33px;
+  width: 280px;
+  height: 63px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
   border: none;
+
+  @include tablets {
+    width: 300px;
+    height: 62px;
+    margin-top: 33px;
+  }
+
+  @include desktop {
+    width: 456px;
+    height: 62px;
+  }
 }
 
 .popup_error {
@@ -51,17 +96,56 @@
 }
 
 .popup-success {
-  display: none;
+  display: block;
 }
 
 .popup_wrapper-grey {
-  padding: 0 82px;
-  padding-top: 16px;
-  padding-bottom: 52px;
   background-color: $grey;
+  padding-top: 9px;
+  padding-bottom: 50px;
+
+  @include tablets {
+    padding: 0 82px;
+    padding-top: 16px;
+    padding-bottom: 52px;
+    background-color: $grey;
+  }
 }
 
 .popup-success__text {
-  max-width: 329px;
-  padding-bottom: 13px;
+  max-width: 286px;
+  text-align: center;
+  padding-bottom: 20px;
+
+  & br {
+    @include tablets {
+      display: none;
+    }
+  }
+
+  @include tablets {
+    max-width: 329px;
+    padding-bottom: 13px;
+  }
+
+  @include desktop {
+    max-width: 381px;
+    padding-bottom: 20px;
+  }
+}
+
+.popup__button_small {
+  @include desktop {
+    width: 300px;
+    margin-top: 0;
+  }
+}
+
+.popup_wrapper-grey-desktop {
+  @include desktop {
+    background: $grey;
+    padding-bottom: 54px;
+    margin-top: 59px;
+    padding-top: 51px;
+  }
 }
