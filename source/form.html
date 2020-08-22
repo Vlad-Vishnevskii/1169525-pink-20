@@ -148,14 +148,13 @@
                 <label for="tel" class="form__field-title form_title-margin">
                   Номер телефона
                 </label>
-                <input class="form__field-text form_field-contacts" tabindex="4" type="text" id="tel" name="telephone" placeholder="Номер, пожалуйста">
-
+                <input class="form__field-text form_field-contacts" tabindex="4" type="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="telephone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__contacts-item">
                 <label for="email" class="form__field-title form_title-margin">
                   Адрес почты
                 </label>
-                <input class="form__field-text form_field-contacts" tabindex="4" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                <input class="form__field-text form_field-contacts" tabindex="4" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </div>
