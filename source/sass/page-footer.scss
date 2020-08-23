@@ -11,10 +11,10 @@
     padding-top: 0;
     padding-left: 20px;
     padding-right: 20px;
+    justify-content: space-between;
   }
 
   @include desktop {
-    justify-content: start;
     padding: 0;
     padding-top: 38px;
   }
@@ -27,12 +27,8 @@
 }
 
 .page-footer__logo {
-  @include tablets {
-    margin-right: 78px;
-  }
-
   @include desktop {
-    margin-right: 240px;
+    margin-right: 19px;
   }
 }
 
@@ -42,29 +38,32 @@
   margin-bottom: 29px;
   padding: 0;
   display: flex;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
   @include tablets {
-    margin-right: 91px;
-  }
-
-  @include desktop {
-    margin-right: 232px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 .social-buttons__item {
-  margin-right: 12px;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
+  margin-right: 11px;
   width: 51px;
   height: 51px;
   border: 3px solid $grey;
   background-color: $white;
   border-radius: 50%;
   overflow: hidden;
+  outline: none;
+
+  &:hover {
+    border-color: $extra-light-black;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 
   @include desktop {
     margin-right: 8px;
@@ -91,14 +90,20 @@
   background-image: url("../img/icon-youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 0;
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: center;
+  margin-top: 6px;
 
   @include tablets {
-    margin-top: 6px;
+    margin-top: 2px;
+  }
+
+  @include desktop {
+    margin-top: 4px;
   }
 }
 
@@ -107,14 +112,69 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 18px;
+  margin-top: 8px;
+
+  @include tablets {
+    margin-top: 11px;
+    margin-right: 15px;
+  }
 
   @include desktop {
     font-size: 18px;
     line-height: 18px;
+    margin-right: 14px;
   }
 }
 
-.copyright__link {
+.copyright__logo {
   margin-top: 10px;
+  fill: $pink;
+}
+
+.copyright__link {
+  outline: none;
+
+  &:hover .copyright__logo {
+    fill: $extra-light-black;
+  }
+
+  &:focus .copyright__logo {
+    fill: $extra-light-black;
+    opacity: 0.3;
+  }
+}
+
+@include desktop {
+  .copyright__link {
+    margin-top: 10px;
+  }
+
+  .page-footer_padding-photopage-desctop {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+}
+
+.page-footer__copyright_margin-photo-page {
+  margin-top: 10px;
+}
+
+.copyright__text_margin-photo-page {
+  @include tablets {
+    margin-right: 11px;
+  }
+
+  @include desktop {
+    margin-right: 8px;
+  }
+}
+
+.copyright__logo_no-margin {
+  margin: 0;
+}
+
+.page-footer_padding-form {
+  @include desktop {
+    padding-top: 33px;
+  }
 }

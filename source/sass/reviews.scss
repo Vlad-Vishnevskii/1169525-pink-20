@@ -117,14 +117,26 @@
   }
 }
 
-.reviews__left-arrow {
+.reviews__arrow {
   position: absolute;
   top: 216px;
+  fill: $extra-light-black;
+  opacity: 0.3;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.1;
+  }
+}
+
+.reviews__left-arrow {
   left: 0;
 }
 
 .reviews__right-arrow {
-  position: absolute;
-  top: 216px;
   right: 0;
 }

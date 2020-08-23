@@ -1,5 +1,5 @@
 // Начните писать стили здесь
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import "./fonts.scss";
 @import "./variables.scss";
 @import "./page.scss";
 @import "./slider.scss";
@@ -16,3 +16,4 @@
 @import "./upload.scss";
 @import "./competition.scss";
 @import "./facts.scss";
+@import "./popaps.scss";

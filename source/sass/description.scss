@@ -93,6 +93,17 @@
   margin: 0 auto;
   margin-bottom: 31px;
   width: 280px;
+  outline: none;
+
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:focus {
+    background-color: $white;
+    color: $pink-opacity;
+  }
 
   @include tablets {
     width: 300px;
@@ -169,13 +180,13 @@
   }
 }
 
-.description_page-from {
+.description_page-foto {
   background: none;
   padding-top: 29px;
 
   @include tablets {
     padding-top: 66px;
-    padding-bottom: 130px;
+    padding-bottom: 126px;
   }
 
   @include desktop {
@@ -212,5 +223,39 @@
 
   @include desktop {
     max-width: 747px;
+  }
+}
+
+.description_page-form {
+  background: none;
+
+  @include tablets {
+    padding-top: 62px;
+    padding-bottom: 0;
+  }
+
+  @include desktop {
+    padding-top: 86px;
+  }
+}
+
+.description__header_padding-form-page {
+  padding-top: 3px;
+  padding-bottom: 44px;
+  font-size: 24px;
+  line-height: 33px;
+
+  @include tablets {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 28px;
+  }
+
+  @include desktop {
+    max-width: 750px;
+    padding-bottom: 55px;
   }
 }

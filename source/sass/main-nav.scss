@@ -1,5 +1,3 @@
-@import "./variables.scss";
-
 .main-nav {
   color: $white;
   text-transform: uppercase;
@@ -20,6 +18,8 @@
   }
 
   @include desktop {
+    flex-direction: row;
+    align-items: center;
     background: none;
     width: auto;
     max-width: 940px;
@@ -63,10 +63,84 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    flex-direction: row;
-    align-items: center;
+.main-nav__burger-button {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  fill: $white;
+  outline: none;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:focus {
+    fill: $pink-opacity;
+  }
+}
+
+.main-nav__close-button {
+  background: none;
+  border: none;
+  padding: 0;
+  fill: $white;
+  outline: none;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:focus {
+    fill: $pink-opacity;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.main-nav_closed {
+  @include not-desktop {
+    background-color: $black-opacity;
+
+    & .main-nav__wrapper {
+      display: none;
+    }
+
+    & .main-nav__logo-wrapper {
+      background: none;
+    }
+
+    & .main-nav__burger-button {
+      display: block;
+    }
+
+    & .main-nav__close-button {
+      display: none;
+    }
+  }
+}
+
+.main-nav_nojs {
+  @include not-desktop {
+    background: none;
+
+    & .main-nav__wrapper {
+      display: block;
+    }
+
+    & .main-nav__logo-wrapper {
+      background: $extra-light-black;
+    }
+
+    & .main-nav__burger-button {
+      display: none;
+    }
+
+    & .main-nav__close-button {
+      display: none;
+    }
   }
 }
 
@@ -76,10 +150,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $desktop-width) {
-  .menu-list {
+  @include desktop {
     flex-direction: row;
   }
 }
@@ -94,6 +166,11 @@
   &:last-of-type {
     border-bottom: 1px solid $black;
     padding-bottom: 15.5px;
+
+    @include desktop {
+      border-bottom: none;
+      margin-right: 0;
+    }
   }
 
   @include tablets {
@@ -118,32 +195,32 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .menu-list__item:last-of-type {
-    border-bottom: none;
-    margin-right: 0;
-  }
-}
-
 .menu-list__link {
   text-decoration: none;
   color: $white;
+  outline: none;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:focus {
+    color: $pink;
+    opacity: 0.3;
+  }
 
   @include desktop () {
     text-transform: none;
+
+    &:focus {
+      color: $white;
+      opacity: 0.3;
+    }
   }
 }
 
-.main-nav__burger-button {
-  display: none;
-}
-
-.main-nav__close-button {
-  background: none;
-  border: none;
-  padding: 0;
-
+.menu-list__item_active {
   @include desktop {
-    display: none;
+    border-bottom: 2px solid $white;
   }
 }

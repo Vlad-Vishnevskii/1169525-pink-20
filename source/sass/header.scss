@@ -1,4 +1,5 @@
 .header {
+  background-color: $light-black;
   background-image: url("../img/bg-back-mobile@1x.jpg");
 
   @include retina {
