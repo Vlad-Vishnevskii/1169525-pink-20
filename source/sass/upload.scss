@@ -1,7 +1,5 @@
-@import "./variables.scss";
-
 .upload {
-  padding-top: 3px;
+  padding-top: 6px;
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
 
@@ -86,7 +84,7 @@
 }
 
 .upload__range {
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: 37px;
   background-color: $extra-light-black;
   width: 240px;
@@ -105,13 +103,18 @@
 }
 
 .upload__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   width: 14px;
   height: 14px;
   background: $white;
   border: 2px solid $pink;
   border-radius: 50%;
 }
+
+.upload__range:hover::-webkit-slider-thumb {
+  background-color: $pink;
+}
+
 
 .upload__buttons-wrapper {
   @include desktop {
@@ -126,7 +129,6 @@
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
-  font-size: 19px;
   outline: none;
 
   &:hover {
@@ -200,6 +202,7 @@
   padding-bottom: 45px;
 
   @include tablets {
+    padding-bottom: 46px;
     display: flex;
     width: 275px;
     justify-content: start;
@@ -207,7 +210,7 @@
 
   @include desktop {
     width: auto;
-    padding-bottom: 35px;
+    padding-bottom: 37px;
   }
 }
 
@@ -242,6 +245,7 @@
 .upload__icon-tablet {
   @include tablets {
     margin-top: 5px;
+    fill: $pink;
   }
 
   @include desktop {

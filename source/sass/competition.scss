@@ -148,7 +148,7 @@
 
   @include tablets {
     position: absolute;
-    top: -28px;
+    top: -35px;
     left: 88px;
     width: 436px;
     background-color: $white;
@@ -167,13 +167,14 @@
   width: 100%;
   box-sizing: border-box;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 30px;
   margin-bottom: 16px;
   margin-top: 5px;
   border: 2px solid $light-grey;
   border-radius: 1px;
   outline: none;
+  color: $extra-light-black;
 
   &:hover {
     border-color: $extra-light-black;
@@ -224,6 +225,7 @@
 
   @include tablets {
     max-width: 436px;
+    line-height: 30px;
   }
 }
 
@@ -286,11 +288,17 @@
   position: absolute;
   display: block;
   border: 2px solid $light-grey;
+  background-color: $white;
   border-radius: 1px;
   width: 39px;
   height: 39px;
   left: -19px;
   top: -3px;
+
+  @include desktop {
+    left: -16px;
+    top: -6px;
+  }
 }
 
 .form__checkbox:checked + .form__advance-text::before {
@@ -435,6 +443,7 @@
     margin-right: auto;
     border: 2px solid $light-grey;
     padding-bottom: 57px;
+    padding-top: 7px;
   }
 
   @include desktop {
@@ -487,6 +496,7 @@
   display: flex;
   align-items: center;
   padding-left: 70px;
+  font-weight: normal;
 
   @include tablets {
     padding-left: 61px;
@@ -500,6 +510,7 @@
 .form__field-radio + .form__radio-text::before {
   content: "";
   border: 2px solid $light-grey;
+  background-color: $white;
   width: 39px;
   height: 39px;
   border-radius: 50%;
@@ -547,7 +558,7 @@
     margin-top: 65px;
     padding-left: 57px;
     padding-right: 56px;
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 44px;
   }
 
@@ -576,6 +587,7 @@
   margin-top: 14px;
   padding-top: 12px;
   outline: none;
+  color: $extra-light-black;
 
   &:hover {
     border-color: $extra-light-black;
@@ -586,12 +598,13 @@
   }
 
   @include tablets {
-    margin-top: 0;
+    margin-top: -2px;
     height: 192px;
   }
 
   @include desktop {
     height: 127px;
+    margin-top: -13px;
   }
 }
 
@@ -620,13 +633,14 @@
   font-size: 18px;
   line-height: 30px;
   background-color: $green;
-  border-radius: 1px;
+  border-radius: 5px;
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 45px;
   padding-right: 45px;
   outline: none;
+  width: 287px;
 
   &:hover {
     background-color: $green-dark;
@@ -686,7 +700,7 @@
   @include tablets {
     position: relative;
     max-width: 370px;
-    top: -49px;
+    top: -41px;
     background-color: $white;
   }
 }
@@ -694,11 +708,11 @@
 .form__field-title-story {
   @include tablets {
     max-width: 260px;
-    top: -37px;
+    top: -34px;
   }
 
-  @include tablets {
-    top: -34px;
+  @include desktop {
+    top: -39px;
   }
 }
 
@@ -708,4 +722,22 @@
   @include desktop {
     display: inline;
   }
+}
+
+.form__field-text::-webkit-input-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $extra-light-black;
+}
+
+.form__field-text:-moz-placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $extra-light-black;
 }

@@ -55,7 +55,7 @@
 
   @include tablets {
     order: 2;
-    margin-top: 57px;
+    margin-top: 58px;
     margin-left: 330px;
   }
 
@@ -135,7 +135,7 @@
 
   &:first-of-type {
     @include desktop {
-      margin-left: 12px;
+      margin-left: 13px;
     }
   }
 }
@@ -149,6 +149,14 @@
 
   @include desktop {
     display: none;
+  }
+}
+
+.advantages__item_space {
+  display: none;
+
+  @include desktop {
+    display: inline;
   }
 }
 
@@ -240,6 +248,18 @@
     font-size: 30px;
     line-height: 30px;
     color: $black;
+    margin-bottom: 23px;
+  }
+}
+
+.advantages__item:nth-of-type(2) .advantages__title {
+  margin-bottom: 11px;
+
+  @include tablets {
+    margin-bottom: 13px;
+  }
+
+  @include desktop {
     margin-bottom: 23px;
   }
 }

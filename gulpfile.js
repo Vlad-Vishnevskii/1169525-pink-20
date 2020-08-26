@@ -11,6 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const uglify = require('gulp-uglify');
+const htmlmin = require('gulp-htmlmin');
 
 
 // Styles
@@ -31,6 +33,28 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+
+// js-min
+
+const js_min = () => {
+  return gulp.src('source/js/*.js')
+        .pipe (uglify())
+        .pipe (gulp.dest('build/js'))
+};
+
+exports.js_min = js_min;
+
+// html-min
+
+const html_min = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
+exports.html_min = html_min;
+
 
 // Server
 
@@ -53,7 +77,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series("html_min")).on("change", sync.reload);
+  gulp.watch("source/js/*.js", gulp.series("js_min")).on("change", sync.reload);
 }
 
 // images
@@ -88,21 +113,12 @@ const sprite = () => {
   }
   exports.sprite = sprite;
 
-// html
-
-const html = () => {
-  return gulp.src("source/*.html")
-  .pipe(gulp.dest("build"))
-  }
- exports.html = html;
-
 //copy
 
- const copy = () => {
+const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -125,7 +141,8 @@ const clean = () => {
     copy,
     styles,
     sprite,
-    html
+    js_min,
+    html_min
   );
 
   exports.build = build;
