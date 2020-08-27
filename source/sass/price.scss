@@ -2,19 +2,19 @@
   font-family: "Open Sans", "Arial", sans-serif;
   text-align: center;
   margin-top: 36px;
-  padding-top: 100px;
+  padding-top: 102px;
   text-transform: uppercase;
   background-color: $grey;
   position: relative;
 
   @include tablets {
-    padding-top: 99px;
+    padding-top: 98px;
     margin-top: 14px;
   }
 
   @include desktop {
     margin-top: 0;
-    padding-top: 156px;
+    padding-top: 157px;
     padding-bottom: 48px;
   }
 }
@@ -113,6 +113,7 @@
   align-items: center;
   padding-left: 41px;
   padding-right: 41px;
+  color: $extra-light-black;
 
   @include tablets {
     justify-content: center;
@@ -194,7 +195,7 @@
 
 .price__toggles {
   padding-top: 32px;
-  padding-bottom: 43px;
+  padding-bottom: 46px;
 
   @include tablets {
     padding-bottom: 15px;
@@ -247,8 +248,8 @@
   content: url("../img/hit.webp");
   position: absolute;
   display: block;
-  top: 2px;
-  left: 22px;
+  top: 1px;
+  left: 20px;
 
   @include tablets {
     content: "Хит";
@@ -285,4 +286,8 @@
     margin: 0 auto;
     padding: 0;
   }
+}
+
+.price__item_on {
+  padding-right: 38px;
 }

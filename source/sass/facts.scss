@@ -11,8 +11,8 @@
 
   @include desktop {
     background-color: $grey;
-    padding-top: 35px;
-    padding-bottom: 59px;
+    padding-top: 30px;
+    padding-bottom: 61px;
   }
 }
 
@@ -78,7 +78,27 @@
   }
 }
 
+.facts_space {
+  display: none;
+
+  @include desktop {
+    display: inline;
+  }
+}
+
 .facts__br-tablet {
+  @include desktop {
+    display: none;
+  }
+}
+
+.facts_space-tablet {
+  display: none;
+
+  @include tablets {
+    display: inline;
+  }
+
   @include desktop {
     display: none;
   }
@@ -93,13 +113,15 @@
 }
 
 .facts__decsription {
+  color: $extra-light-black;
+
   @include tablets {
     margin-top: 10px;
     margin-bottom: 9px;
   }
 
   @include desktop {
-    margin-top: 21px;
+    margin-top: 26px;
     margin-bottom: 30px;
   }
 }

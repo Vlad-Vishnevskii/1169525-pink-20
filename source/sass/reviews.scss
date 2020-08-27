@@ -63,6 +63,7 @@
   line-height: 30px;
   margin-top: 38px;
   margin-bottom: 0;
+  color: $black;
 
   @include tablets {
     margin-top: 20px;
@@ -81,6 +82,7 @@
 
 .reviews__author-info {
   display: none;
+  color: $extra-light-black;
 
   @include tablets {
     display: block;

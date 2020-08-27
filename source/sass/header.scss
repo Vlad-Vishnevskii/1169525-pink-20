@@ -9,6 +9,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  background-position: top;
 
   @include tablets {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -29,6 +30,53 @@
 
 .header__logo {
   display: block;
+  outline: none;
+}
+
+.header__logo_active:hover .header__logo_mobile-visible,
+.header__logo_active:hover .header__logo_tablet-visible,
+.header__logo_active:hover .header__logo_desktop-visible {
+  fill: $pink;
+}
+
+.header__logo_active:focus .header__logo_mobile-visible,
+.header__logo_active:focus .header__logo_tablet-visible,
+.header__logo_active:focus .header__logo_desktop-visible {
+  opacity: 0.3;
+}
+
+.header__logo_mobile-visible {
+  fill: $white;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.header__logo_tablet-visible {
+  display: none;
+  fill: $white;
+
+  @include tablets {
+    display: block;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__logo_desktop-visible {
+  display: none;
+  fill: $white;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.logo-path-pink {
+  fill: $pink;
 }
 
 .header__logo img {

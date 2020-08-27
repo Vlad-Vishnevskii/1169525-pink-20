@@ -10,10 +10,10 @@
 
   @include retina {
     background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: 257px auto;
+    background-size: 258px auto;
   }
   background-repeat: no-repeat;
-  background-position: 2px 110px;
+  background-position: 0 110px;
   padding-left: 0;
   padding-right: 0;
 
@@ -21,7 +21,7 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 92px;
-    padding-bottom: 116px;
+    padding-bottom: 115px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: bottom;
 
@@ -39,7 +39,7 @@
       background-size: 1049px auto;
     }
     background-position: 15px bottom;
-    padding-top: 130px;
+    padding-top: 99px;
     padding-bottom: 124px;
     padding-left: 0;
     padding-right: 0;
@@ -182,7 +182,7 @@
 
 .description_page-foto {
   background: none;
-  padding-top: 29px;
+  padding-top: 27px;
 
   @include tablets {
     padding-top: 66px;
@@ -190,7 +190,7 @@
   }
 
   @include desktop {
-    padding-top: 88px;
+    padding-top: 59px;
     padding-bottom: 90px;
   }
 }
@@ -198,7 +198,7 @@
 .description__header_page-from {
   font-size: 24px;
   line-height: 33px;
-  padding-bottom: 75px;
+  padding-bottom: 76px;
 
   @include tablets {
     margin-left: auto;
@@ -235,7 +235,7 @@
   }
 
   @include desktop {
-    padding-top: 86px;
+    padding-top: 57px;
   }
 }
 
