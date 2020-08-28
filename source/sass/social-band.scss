@@ -73,7 +73,7 @@
   }
 }
 
-.social-band__post-wrapper-long {
+.photo-element__post-wrapper-long {
   background-color: $grey;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -108,13 +108,13 @@
   fill: $pink;
 }
 
-.social-band__post-wrapper-long .social-band__like-counter {
+.photo-element__post-wrapper-long .social-band__like-counter {
   @include tablets {
     order: 1;
   }
 }
 
-.social-band__post-wrapper-long .social-band_post-text {
+.photo-element__post-wrapper-long .social-band_post-text {
   @include tablets {
     order: 2;
   }

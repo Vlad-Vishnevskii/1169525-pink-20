@@ -33,19 +33,19 @@
   outline: none;
 }
 
-.header__logo_active:hover .header__logo_mobile-visible,
-.header__logo_active:hover .header__logo_tablet-visible,
-.header__logo_active:hover .header__logo_desktop-visible {
+.header__logo_active:hover .header__logo-mobile-visible,
+.header__logo_active:hover .header__logo-tablet-visible,
+.header__logo_active:hover .header__logo-desktop-visible {
   fill: $pink;
 }
 
-.header__logo_active:focus .header__logo_mobile-visible,
-.header__logo_active:focus .header__logo_tablet-visible,
-.header__logo_active:focus .header__logo_desktop-visible {
+.header__logo_active:focus .header__logo-mobile-visible,
+.header__logo_active:focus .header__logo-tablet-visible,
+.header__logo_active:focus .header__logo-desktop-visible {
   opacity: 0.3;
 }
 
-.header__logo_mobile-visible {
+.header__logo-mobile-visible {
   fill: $white;
 
   @include tablets {
@@ -53,7 +53,7 @@
   }
 }
 
-.header__logo_tablet-visible {
+.header__logo-tablet-visible {
   display: none;
   fill: $white;
 
@@ -66,7 +66,7 @@
   }
 }
 
-.header__logo_desktop-visible {
+.header__logo-desktop-visible {
   display: none;
   fill: $white;
 
