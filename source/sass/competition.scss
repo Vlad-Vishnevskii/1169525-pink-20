@@ -45,7 +45,7 @@
   }
 }
 
-.comptition__request {
+.competition__request {
   display: none;
 
   @include tablets {
@@ -65,7 +65,7 @@
   }
 }
 
-.form_no-padding-modile {
+.form_no-padding-mobile {
   padding-left: 0;
   padding-right: 0;
 }
@@ -334,7 +334,7 @@
   }
 }
 
-.form_contacts-title {
+.form__contacts-title {
   display: none;
 
   @include tablets {
@@ -416,13 +416,13 @@
   }
 }
 
-.form_field-contacts {
+.form__field-text_contacts {
   @include tablets {
     margin-bottom: 9px;
   }
 }
 
-.form_title-margin {
+.form__field-title_margin {
   @include tablets {
     margin-left: 18px;
   }
@@ -608,7 +608,7 @@
   }
 }
 
-.form_down {
+.form__down {
   order: 5;
   display: flex;
   flex-direction: column;
@@ -627,7 +627,7 @@
   }
 }
 
-.form_button {
+.form__button {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
@@ -705,7 +705,7 @@
   }
 }
 
-.form__field-title-story {
+.form__field-title_story {
   @include tablets {
     max-width: 260px;
     top: -34px;
@@ -716,7 +716,7 @@
   }
 }
 
-.form_desctop-notation-text {
+.form__desktop-notation-text {
   display: none;
 
   @include desktop {
@@ -733,11 +733,12 @@
   color: $extra-light-black;
 }
 
-.form__field-text:-moz-placeholder {
+.form__field-text::-moz-placeholder {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: $extra-light-black;
+  opacity: 1;
 }

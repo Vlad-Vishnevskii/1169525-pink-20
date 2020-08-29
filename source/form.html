@@ -107,7 +107,7 @@
       </symbol>
     </svg>
     <header class="header">
-      <div class="main-nav-desctop-wrapper">
+      <div class="main-nav-desktop-wrapper">
         <nav class="main-nav container main-nav_closed main-nav_nojs">
           <div class="main-nav__logo-wrapper">
           <a href="index.html" class="header__logo header__logo_active">
@@ -183,9 +183,9 @@
           Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!
-          <span class="comptition__request">Пожалуйста, заполните форму ниже:</span>
+          <span class="competition__request">Пожалуйста, заполните форму ниже:</span>
         </h3>
-        <form class="form container form_no-padding-modile" action="https://echo.htmlacademy.ru">
+        <form class="form container form_no-padding-mobile" action="https://echo.htmlacademy.ru">
           <div class="form__section form__section_name">
             <label class="form__field">
               <span class="form__field-title">Фамилия:</span><br>
@@ -232,19 +232,21 @@
             </ul>
           </div>
           <div class="form__section form__section_contacts">
-            <h2 class="form_contacts-title" >Контактная информация</h2>
+            <h2 class="form__contacts-title">
+              Контактная информация
+            </h2>
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
-                <label for="tel" class="form__field-title form_title-margin">
+                <label for="tel" class="form__field-title form__field-title_margin">
                   Номер телефона
                 </label>
-                <input class="form__field-text form_field-contacts" tabindex="4" type="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="telephone" placeholder="Номер, пожалуйста">
+                <input class="form__field-text form__field-text_contacts" tabindex="4" type="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="telephone" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__contacts-item">
-                <label for="email" class="form__field-title form_title-margin">
+                <label for="email" class="form__field-title form__field-title_margin">
                   Адрес почты
                 </label>
-                <input class="form__field-text form_field-contacts" tabindex="4" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" id="email" name="email" placeholder="Введите почту *" required>
+                <input class="form__field-text form__field-text_contacts" tabindex="4" type="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </div>
@@ -269,21 +271,20 @@
             </ul>
           </div>
           <div class="form__section form__section_story">
-            <div class="form__field-title form__title form__title_center form__field-title-story">
+            <label for="story" class="form__field-title form__title form__title_center form__field-title_story">
               Опишите свои эмоции
-            </div>
-            <textarea class="form__story-text" name="story"  rows="5">Можно прям в красках, не стесняясь в выражениях
+            </label>
+            <textarea id="story" class="form__story-text" name="story"  rows="5">Можно прям в красках, не стесняясь в выражениях
             </textarea>
           </div>
-          <div class="form_down">
-            <button class="form_button button" type="submit">
+          <div class="form__down">
+            <button class="form__button button" type="submit">
               Отправить форму
             </button>
-            <p class="from__notation container"><span class="form__star">*</span> — обязательные <span class="form_desctop-notation-text">для заполнения</span> поля</p>
+            <p class="from__notation container"><span class="form__star">*</span> — обязательные <span class="form__desktop-notation-text">для заполнения</span> поля</p>
           </div>
         </form>
       </section>
-
 
     </main>
 
@@ -296,7 +297,7 @@
           <use xlink:href="#footer-logo-desktop"></use>
         </svg>
       </a>
-      <ul class="page-footer__social-buttons social-buttons page-footer__copyright_margin-form-page">
+      <ul class="page-footer__social-buttons social-buttons">
         <li>
           <a href="#" class="social-buttons__icon social-buttons__icon_twitter social-buttons__link"><span class="visually-hidden">twitter</span></a>
         </li>
@@ -328,25 +329,25 @@
         красным, скорее всего вы забыли
         их заполнить
       </p>
-      <div class="popup_wrapper-grey-desktop">
+      <div class="popup__wrapper-grey-desktop">
         <button class="popup__button button popup__button_small" type="button">
           Ок
         </button>
       </div>
     </div>
 
-    <div class="popup popup-success">
+    <div class="popup popup_success">
       <h2 class="popup__title">
         Ваша заявка
         отправлена
       </h2>
-      <p class="popup__text popup-success__text">
+      <p class="popup__text popup__text_success">
         Спасибо за ваше участие, ваша
         заявка уже поступила к нам. В
         ближайшее время мы рассмотрим
-        ее и <br> <span class="popus_space-tablet">&nbsp;</span>оповестим вас.
+        ее и <br> <span class="popus__space-tablet">&nbsp;</span>оповестим вас.
       </p>
-      <div class="popup_wrapper-grey">
+      <div class="popup__wrapper-grey">
         <button class="popup__button button" type="button">
           Закрыть окно
         </button>

@@ -114,7 +114,7 @@
   }
 }
 
-.photo-element__post-wrapper-long .social-band_post-text {
+.photo-element__post-wrapper-long .social-band__post-text {
   @include tablets {
     order: 2;
   }
@@ -125,7 +125,7 @@
 }
 
 
-.social-band_author {
+.social-band__author {
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
@@ -133,14 +133,14 @@
   margin-bottom: 14px;
 }
 
-.social-band_post-time {
+.social-band__post-time {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
 }
 
-.social-band_post-text {
+.social-band__post-text {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -152,7 +152,7 @@
   }
 }
 
-.social-band_post-text br {
+.social-band__post-text br {
   @include tablets {
     display: none;
   }
@@ -194,11 +194,11 @@
   }
 }
 
-.photo-element_sretch {
+.photo-element_stretch {
   position: relative;
 }
 
-.photo-element_sretch::after {
+.photo-element_stretch::after {
   position: absolute;
   content: "Панорама дня";
   background-color: $pink;
@@ -225,7 +225,7 @@
   }
 }
 
-.social-band_space-tablet {
+.social-band__space-tablet {
   display: none;
 
   @include tablets {

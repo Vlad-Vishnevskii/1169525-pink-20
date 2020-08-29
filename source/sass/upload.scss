@@ -35,7 +35,7 @@
   }
 }
 
-.upload__wrapper {
+.upload__form {
   background-color: $grey;
 
   @include desktop {
@@ -111,10 +111,22 @@
   border-radius: 50%;
 }
 
+.upload__range::-moz-range-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+}
+
 .upload__range:hover::-webkit-slider-thumb {
   background-color: $pink;
 }
 
+.upload__range:hover::-moz-range-thumb {
+  background-color: $pink;
+}
 
 .upload__buttons-wrapper {
   @include desktop {
@@ -122,7 +134,7 @@
   }
 }
 
-.upload_confirm {
+.upload__confirm {
   margin-top: 66px;
   margin-bottom: 12px;
   margin-left: auto;
