@@ -706,6 +706,8 @@
 }
 
 .form__field-title_story {
+  display: block;
+
   @include tablets {
     max-width: 260px;
     top: -34px;

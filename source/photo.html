@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" href="./fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
-
 <body class="page__body">
   <svg style="display: none">
     <symbol viewBox="0 0 50 24" id="menu-open">
@@ -189,7 +190,7 @@
     <div class="main-nav-desktop-wrapper">
       <nav class="main-nav container main-nav_closed main-nav_nojs">
         <div class="main-nav__logo-wrapper">
-          <a href="index.html" class="header__logo header__logo_active">
+          <a aria-label="Логотип шапки" href="index.html" class="header__logo header__logo_active">
             <svg class="header__logo-mobile-visible" width="74" height="22">
               <use xlink:href="#pink-logo-mobile"></use>
             </svg>
@@ -264,17 +265,19 @@
         Видите, как не хватает ваших?
       </p>
       <div class="photo-element photo-element_stretch">
-        <picture>
-          <source type="image/webp" srcset="./img/panorama-desktop@1x.webp 1x, ./img/panorama-desktop@2x.webp 2x"
-            media="(min-width: 1200px)">
-          <source type="image/webp" srcset="./img/panorama-tablet@1x.webp 1x, ./img/panorama-tablet@2x.webp 2x"
-            media="(min-width: 768px)">
-          <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
-          <source srcset="./img/panorama-desktop@1x.jpg, ./img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-          <source srcset="./img/panorama-tablet@1x.jpg, ./img/panorama-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="social-band__img social-band__img_stertch" src="./img/panorama-mobile@1x.jpg"
-            srcset="./img/panorama-mobile@2x.jpg 2x" width="320" height="133" alt="post-image">
-        </picture>
+        <a href="./img/panorama-desktop@1x.jpg">
+          <picture>
+            <source type="image/webp" srcset="./img/panorama-desktop@1x.webp 1x, ./img/panorama-desktop@2x.webp 2x"
+              media="(min-width: 1200px)">
+            <source type="image/webp" srcset="./img/panorama-tablet@1x.webp 1x, ./img/panorama-tablet@2x.webp 2x"
+              media="(min-width: 768px)">
+            <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
+            <source srcset="./img/panorama-desktop@1x.jpg, ./img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./img/panorama-tablet@1x.jpg, ./img/panorama-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="social-band__img social-band__img_stertch" src="./img/panorama-mobile@1x.jpg"
+              srcset="./img/panorama-mobile@2x.jpg 2x" width="320" height="133" alt="post-image">
+          </picture>
+        </a>
         <div class="photo-element__post-wrapper-long">
           <div class="social-band__author-wrapper">
             <span class="social-band__author">
@@ -302,18 +305,20 @@
       </div>
       <ul class="social-band container">
         <li class="social-band__item photo-element">
-          <picture>
-            <source type="image/webp" srcset="./img/photo-car-desktop@1x.webp 1x, ./img/photo-car-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="./img/photo-car-tablet@1x.webp 1x, ./img/photo-car-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp" srcset="./img/photo-car-mobile@1x.webp 1x, ./img/photo-car-mobile@2x.webp 2x">
-            <source srcset="./img/photo-car-desktop@1x.jpg, ./img/photo-car-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-car-tablet@1x.jpg, ./img/photo-car-tablet@2x.jpg 2x" media="(min-width: 768px)">
-            <img class="social-band__img" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x"
-              width="280" height="176" alt="post-image">
-          </picture>
+          <a href="./img/photo-car-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp" srcset="./img/photo-car-desktop@1x.webp 1x, ./img/photo-car-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp" srcset="./img/photo-car-tablet@1x.webp 1x, ./img/photo-car-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/photo-car-mobile@1x.webp 1x, ./img/photo-car-mobile@2x.webp 2x">
+              <source srcset="./img/photo-car-desktop@1x.jpg, ./img/photo-car-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-car-tablet@1x.jpg, ./img/photo-car-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="social-band__img" src="./img/photo-car-mobile@1x.jpg" srcset="./img/photo-car-mobile@2x.jpg 2x"
+                width="280" height="176" alt="post-image">
+            </picture>
+          </a>
           <div class="social-band__post-wrapper">
             <span class="social-band__author">
               Левон
@@ -335,22 +340,24 @@
           </div>
         </li>
         <li class="social-band__item photo-element">
-          <picture>
-            <source type="image/webp"
-              srcset="./img/photo-drumset-desktop@1x.webp 1x, ./img/photo-drumset-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp"
-              srcset="./img/photo-drumset-tablet@1x.webp 1x, ./img/photo-drumset-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp"
-              srcset="./img/photo-drumset-mobile@1x.webp 1x, ./img/photo-drumset-mobile@2x.webp 2x">
-            <source srcset="./img/photo-drumset-desktop@1x.jpg, ./img/photo-drumset-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-drumset-tablet@1x.jpg, ./img/photo-drumset-tablet@2x.jpg 2x"
-              media="(min-width: 768px)">
-            <img class="social-band__img" src="./img/photo-drumset-mobile@1x.jpg"
-              srcset="./img/photo-drumset-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
-          </picture>
+          <a href="./img/photo-drumset-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp"
+                srcset="./img/photo-drumset-desktop@1x.webp 1x, ./img/photo-drumset-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp"
+                srcset="./img/photo-drumset-tablet@1x.webp 1x, ./img/photo-drumset-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp"
+                srcset="./img/photo-drumset-mobile@1x.webp 1x, ./img/photo-drumset-mobile@2x.webp 2x">
+              <source srcset="./img/photo-drumset-desktop@1x.jpg, ./img/photo-drumset-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-drumset-tablet@1x.jpg, ./img/photo-drumset-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img class="social-band__img" src="./img/photo-drumset-mobile@1x.jpg"
+                srcset="./img/photo-drumset-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
+            </picture>
+          </a>
           <div class="social-band__post-wrapper">
             <span class="social-band__author">
               Антон
@@ -372,22 +379,24 @@
           </div>
         </li>
         <li class="social-band__item photo-element">
-          <picture>
-            <source type="image/webp"
-              srcset="./img/photo-window-desktop@1x.webp 1x, ./img/photo-window-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp"
-              srcset="./img/photo-window-tablet@1x.webp 1x, ./img/photo-window-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp"
-              srcset="./img/photo-window-mobile@1x.webp 1x, ./img/photo-window-mobile@2x.webp 2x">
-            <source srcset="./img/photo-window-desktop@1x.jpg, ./img/photo-window-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-window-tablet@1x.jpg, ./img/photo-window-tablet@2x.jpg 2x"
-              media="(min-width: 768px)">
-            <img class="social-band__img" src="./img/photo-window-mobile@1x.jpg"
-              srcset="./img/photo-window-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
-          </picture>
+          <a href="./img/photo-wing-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp"
+                srcset="./img/photo-window-desktop@1x.webp 1x, ./img/photo-window-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp"
+                srcset="./img/photo-window-tablet@1x.webp 1x, ./img/photo-window-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp"
+                srcset="./img/photo-window-mobile@1x.webp 1x, ./img/photo-window-mobile@2x.webp 2x">
+              <source srcset="./img/photo-window-desktop@1x.jpg, ./img/photo-window-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-window-tablet@1x.jpg, ./img/photo-window-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img class="social-band__img" src="./img/photo-window-mobile@1x.jpg"
+                srcset="./img/photo-window-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
+            </picture>
+          </a>
           <div class="social-band__post-wrapper">
             <span class="social-band__author">
               Борис
@@ -409,19 +418,21 @@
           </div>
         </li>
         <li class="social-band__item photo-element">
-          <picture>
-            <source type="image/webp" srcset="./img/photo-fair-desktop@1x.webp 1x, ./img/photo-fair-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="./img/photo-fair-tablet@1x.webp 1x, ./img/photo-fair-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp" srcset="./img/photo-fair-mobile@1x.webp 1x, ./img/photo-fair-mobile@2x.webp 2x">
-            <source srcset="./img/photo-fair-desktop@1x.jpg, ./img/photo-fair-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-fair-tablet@1x.jpg, ./img/photo-fair-tablet@2x.jpg 2x"
-              media="(min-width: 768px)">
-            <img class="social-band__img" src="./img/photo-fair-mobile@1x.jpg"
-              srcset="./img/photo-fair-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
-          </picture>
+          <a href="./img/photo-fair-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp" srcset="./img/photo-fair-desktop@1x.webp 1x, ./img/photo-fair-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp" srcset="./img/photo-fair-tablet@1x.webp 1x, ./img/photo-fair-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/photo-fair-mobile@1x.webp 1x, ./img/photo-fair-mobile@2x.webp 2x">
+              <source srcset="./img/photo-fair-desktop@1x.jpg, ./img/photo-fair-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-fair-tablet@1x.jpg, ./img/photo-fair-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img class="social-band__img" src="./img/photo-fair-mobile@1x.jpg"
+                srcset="./img/photo-fair-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
+            </picture>
+          </a>
           <div class="social-band__post-wrapper">
             <span class="social-band__author">
               Сергей
@@ -443,18 +454,20 @@
           </div>
         </li>
         <li class="social-band__item photo-element">
-          <picture>
-            <source type="image/webp" srcset="./img/photo-pov-desktop@1x.webp 1x, ./img/photo-pov-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="./img/photo-pov-tablet@1x.webp 1x, ./img/photo-pov-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp" srcset="./img/photo-pov-mobile@1x.webp 1x, ./img/photo-pov-mobile@2x.webp 2x">
-            <source srcset="./img/photo-pov-desktop@1x.jpg, ./img/photo-pov-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-pov-tablet@1x.jpg, ./img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 768px)">
-            <img class="social-band__img" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x"
-              width="280" height="176" alt="post-image">
-          </picture>
+          <a href="./img/photo-pov-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp" srcset="./img/photo-pov-desktop@1x.webp 1x, ./img/photo-pov-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp" srcset="./img/photo-pov-tablet@1x.webp 1x, ./img/photo-pov-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/photo-pov-mobile@1x.webp 1x, ./img/photo-pov-mobile@2x.webp 2x">
+              <source srcset="./img/photo-pov-desktop@1x.jpg, ./img/photo-pov-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-pov-tablet@1x.jpg, ./img/photo-pov-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="social-band__img" src="./img/photo-pov-mobile@1x.jpg" srcset="./img/photo-pov-mobile@2x.jpg 2x"
+                width="280" height="176" alt="post-image">
+            </picture>
+          </a>
           <div class="social-band__post-wrapper">
             <span class="social-band__author">
               Максим
@@ -476,19 +489,21 @@
           </div>
         </li>
         <li class="social-band__item photo-element">
-          <picture>
-            <source type="image/webp" srcset="./img/photo-wing-desktop@1x.webp 1x, ./img/photo-wing-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="./img/photo-wing-tablet@1x.webp 1x, ./img/photo-wing-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp" srcset="./img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
-            <source srcset="./img/photo-wing-desktop@1x.jpg, ./img/photo-wing-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-wing-tablet@1x.jpg, ./img/photo-wing-tablet@2x.jpg 2x"
-              media="(min-width: 768px)">
-            <img class="social-band__img" src="./img/photo-wing-mobile@1x.jpg"
-              srcset="./img/photo-wing-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
-          </picture>
+          <a href="./img/photo-wing-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp" srcset="./img/photo-wing-desktop@1x.webp 1x, ./img/photo-wing-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp" srcset="./img/photo-wing-tablet@1x.webp 1x, ./img/photo-wing-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/photo-wing-mobile@1x.webp 1x, ./img/photo-wing-mobile@2x.webp 2x">
+              <source srcset="./img/photo-wing-desktop@1x.jpg, ./img/photo-wing-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-wing-tablet@1x.jpg, ./img/photo-wing-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img class="social-band__img" src="./img/photo-wing-mobile@1x.jpg"
+                srcset="./img/photo-wing-mobile@2x.jpg 2x" width="280" height="176" alt="post-image">
+            </picture>
+          </a>
           <div class="social-band__post-wrapper">
             <span class="social-band__author">
               Надежда
@@ -518,54 +533,55 @@
         Выкладывайте все, что накопилось в телефоне!
       </h3>
       <form class="upload__form" action="https://echo.htmlacademy.ru">
-        <div class="upload__grey-background container">
-          <picture>
-            <source type="image/webp" srcset="./img/photo-road-desktop@1x.webp 1x, ./img/photo-road-desktop@2x.webp 2x"
-              media="(min-width: 1200px)">
-            <source type="image/webp" srcset="./img/photo-road-tablet@1x.webp 1x, ./img/photo-road-tablet@2x.webp 2x"
-              media="(min-width: 768px)">
-            <source type="image/webp" srcset="./img/photo-road-mobile@1x.webp 1x, ./img/photo-road-mobile@2x.webp 2x">
-            <source srcset="./img/photo-road-desktop@1x.jpg, ./img/photo-road-desktop@2x.jpg 2x"
-              media="(min-width: 1200px)">
-            <source srcset="./img/photo-road-tablet@1x.jpg, ./img/photo-road-tablet@2x.jpg 2x"
-              media="(min-width: 768px)">
-            <img class="upload__photo" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x"
-              width="280" height="374" alt="Ваше фото">
-          </picture>
+        <div class="upload__grey-background">
+          <a href="./img/photo-road-desktop@1x.jpg">
+            <picture>
+              <source type="image/webp" srcset="./img/photo-road-desktop@1x.webp 1x, ./img/photo-road-desktop@2x.webp 2x"
+                media="(min-width: 1200px)">
+              <source type="image/webp" srcset="./img/photo-road-tablet@1x.webp 1x, ./img/photo-road-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
+              <source type="image/webp" srcset="./img/photo-road-mobile@1x.webp 1x, ./img/photo-road-mobile@2x.webp 2x">
+              <source srcset="./img/photo-road-desktop@1x.jpg, ./img/photo-road-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./img/photo-road-tablet@1x.jpg, ./img/photo-road-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+              <img class="upload__photo" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@2x.jpg 2x"
+                width="280" height="374" alt="Ваше фото">
+            </picture>
+          </a>
           <div class="upload__photo-mod">
-            <label for="mobile-mod" class="upload__icons-list">
-              <svg class="upload__icon upload__icon_active" width="44" height="44">
-                <use xlink:href="#icon-crop"></use>
-              </svg>
-              <svg class="upload__icon" width="48" height="43">
-                <use xlink:href="#icon-fill"></use>
-              </svg>
-              <svg class="upload__icon" width="32" height="32">
-                <use xlink:href="#icon-contrast"></use>
-              </svg>
-            </label>
-            <input id="mobile-mod" class="upload__range" name="mobile-mod" type="range" min="0" max="100" value="85">
-          </div>
-          <div class="upload__large-mod-wrapper">
-            <div class="upload__photo-mod-large">
-              <label class="upload__photo-mod-large-item">
-                <svg class="upload__icon-tablet" width="22" height="22">
-                  <use xlink:href="#icon-crop"></use>
-                </svg>
-                <input class="upload__range" name="crop" type="range" step="1" min="0" max="100" value="78">
-              </label>
-              <label class="upload__photo-mod-large-item">
-                <svg class="upload__icon-tablet" width="24" height="22">
-                  <use xlink:href="#icon-fill"></use>
-                </svg>
-                <input class="upload__range" name="fill" type="range" step="1" min="0" max="100" value="13">
-              </label>
-              <label class="upload__photo-mod-large-item">
-                <svg class="upload__icon-tablet" width="16" height="16">
-                  <use xlink:href="#icon-contrast"></use>
-                </svg>
-                <input class="upload__range" name="contrast" type="range" step="1" min="0" max="100" value="50">
-              </label>
+            <div class="upload__photo-mod-wrapper">
+              <div class="upload__icons-list">
+                <label class="upload__item" for="crop">
+                  <svg class="upload__icon upload__icon_active" width="44" height="44">
+                    <use xlink:href="#icon-crop"></use>
+                  </svg>
+                  <svg class="upload__icon-tablet upload__icon-tablet_crop" width="22" height="22">
+                    <use xlink:href="#icon-crop"></use>
+                  </svg>
+                </label>
+                <label class="upload__item" for="fill">
+                  <svg class="upload__icon" width="48" height="43">
+                    <use xlink:href="#icon-fill"></use>
+                  </svg>
+                  <svg class="upload__icon-tablet upload__icon-tablet_fill" width="24" height="22">
+                    <use xlink:href="#icon-fill"></use>
+                  </svg>
+                </label>
+                <label class="upload__item" for="contrast">
+                  <svg class="upload__icon" width="32" height="32">
+                    <use xlink:href="#icon-contrast"></use>
+                  </svg>
+                  <svg class="upload__icon-tablet upload__icon-tablet_contrast" width="16" height="16">
+                    <use xlink:href="#icon-contrast"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="upload__range-list">
+                <input id="crop" class="upload__range upload__range_active-mobile" name="crop" type="range" step="1" min="0" max="100" value="85">
+                <input id="fill" class="upload__range" name="fill" type="range" step="1" min="0" max="100" value="13">
+                <input id="contrast" class="upload__range" name="contrast" type="range" step="1" min="0" max="100" value="50">
+              </div>
             </div>
             <div class="upload__buttons-wrapper">
               <button class="upload__confirm button button_pink" type="submit">
@@ -583,7 +599,7 @@
   </main>
 
   <footer class="page-footer container page-footer_margin-photo-page">
-    <a href="index.html" class="page-footer__logo page-footer__logo_active page-footer__logo_margin-desktop">
+    <a aria-label="Логотип подвала" href="index.html" class="page-footer__logo page-footer__logo_active page-footer__logo_margin-desktop">
       <svg class="page-footer__logo_mobile-tablet-visible" width="146" height="40">
         <use xlink:href="#footer-logo-mob-tab"></use>
       </svg>
@@ -608,7 +624,7 @@
 
     <div class="page-footer__copyright сopyright page-footer__copyright_margin-photo-page">
       <b class="copyright__text copyright__text_margin-photo-page">Разработано:</b>
-      <a class="copyright__link copyright__link_photo-page-margin" href="https://htmlacademy.ru/intensive/adaptive">
+      <a aria-label="Логотип разработчика" class="copyright__link copyright__link_photo-page-margin" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo copyright__logo_no-margin" width="27" height="34">
           <use xlink:href="#academy-logo"></use>
         </svg>
