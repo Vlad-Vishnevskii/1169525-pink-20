@@ -1,0 +1,30 @@
+.photo-element-stretch {
+  position: relative;
+}
+
+.photo-element-stretch::after {
+  position: absolute;
+  content: "Панорама дня";
+  background-color: $pink;
+  color: $white;
+  display: flex;
+  width: 140px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  top: 0;
+  right: 20px;
+
+  @include tablets {
+    top: 57px;
+  }
+
+  @include desktop {
+    top: 55px;
+    right: 121px;
+  }
+}

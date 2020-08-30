@@ -1,0 +1,86 @@
+.page-footer {
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 51px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablets {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include desktop {
+    padding: 0;
+    padding-top: 30px;
+  }
+}
+
+.page-footer_margin-photo-page {
+  @include desktop {
+    padding-top: 57px;
+  }
+}
+
+.page-footer__logo_mobile-tablet-visible {
+  fill: $extra-light-black;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.page-footer__logo_desktop-visible {
+  display: none;
+
+  @include desktop {
+    display: block;
+    fill: $extra-light-black;
+  }
+}
+
+.page-footer__logo {
+  outline: none;
+
+  @include tablets {
+    margin-top: -6px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.page-footer__logo_active:hover .page-footer__logo_mobile-tablet-visible,
+.page-footer__logo_active:hover .page-footer__logo_desktop-visible {
+  fill: $pink;
+}
+
+.page-footer__logo_active:focus .page-footer__logo_mobile-tablet-visible,
+.page-footer__logo_active:focus .page-footer__logo_desktop-visible {
+  opacity: 0.3;
+}
+
+// .page-footer_padding-photopage-desctop {
+//   @include desktop {
+//     padding-top: 32px;
+//     padding-bottom: 40px;
+//   }
+// }
+
+.page-footer__copyright_margin-photo-page {
+  margin-top: 10px;
+
+  @include tablets {
+    margin-top: 0;
+  }
+}
+
+.page-footer_padding-form {
+  @include desktop {
+    padding-top: 25px;
+  }
+}

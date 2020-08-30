@@ -73,7 +73,11 @@
   }
 }
 
-.photo-element__post-wrapper-long {
+.social-band__icon-heart {
+  fill: $pink;
+}
+
+.social-band__post-wrapper-long {
   background-color: $grey;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -104,17 +108,13 @@
   }
 }
 
-.social-band__icon-heart {
-  fill: $pink;
-}
-
-.photo-element__post-wrapper-long .social-band__like-counter {
+.social-band__post-wrapper-long .social-band__like-counter {
   @include tablets {
     order: 1;
   }
 }
 
-.photo-element__post-wrapper-long .social-band__post-text {
+.social-band__post-wrapper-long .social-band__post-text {
   @include tablets {
     order: 2;
   }
@@ -191,37 +191,6 @@
   @include tablets {
     order: -1;
     margin-left: 0;
-  }
-}
-
-.photo-element_stretch {
-  position: relative;
-}
-
-.photo-element_stretch::after {
-  position: absolute;
-  content: "Панорама дня";
-  background-color: $pink;
-  color: $white;
-  display: flex;
-  width: 140px;
-  height: 36px;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
-  top: 0;
-  right: 20px;
-
-  @include tablets {
-    top: 57px;
-  }
-
-  @include desktop {
-    top: 55px;
-    right: 121px;
   }
 }
 
