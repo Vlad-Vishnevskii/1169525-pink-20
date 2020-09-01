@@ -157,14 +157,10 @@
   }
 }
 
-.popus__space-tablet {
+.popup__space-tablet {
   display: none;
 
   @include tablets {
     display: inline;
-  }
-
-  @include desktop {
-    display: none;
   }
 }

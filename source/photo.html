@@ -6,6 +6,9 @@
   <link rel="preload" href="./fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/opensans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="./fonts/opensanslight.woff" as="font" type="font/woff" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
@@ -186,6 +189,7 @@
       </g>
     </symbol>
   </svg>
+
   <header class="header">
     <div class="main-nav-desktop-wrapper">
       <nav class="main-nav container main-nav_closed main-nav_nojs">
@@ -244,11 +248,13 @@
         </div>
       </nav>
     </div>
-    <section class="description container description_page-foto">
-      <h2 class="description__header description__header_page-foto">
+
+    <section class="description container description_page-photo">
+      <h2 class="description__header description__header_page-photo">
         Фотографии пользователей
       </h2>
     </section>
+
   </header>
 
   <main class="page-main">
@@ -274,30 +280,30 @@
             <source type="image/webp" srcset="./img/panorama-mobile@1x.webp 1x, ./img/panorama-mobile@2x.webp 2x">
             <source srcset="./img/panorama-desktop@1x.jpg, ./img/panorama-desktop@2x.jpg 2x" media="(min-width: 1200px)">
             <source srcset="./img/panorama-tablet@1x.jpg, ./img/panorama-tablet@2x.jpg 2x" media="(min-width: 768px)">
-            <img class="social-band__img social-band__img_stertch" src="./img/panorama-mobile@1x.jpg"
+            <img class="photo-element-stretch__img photo-element-stretch__img_stretch" src="./img/panorama-mobile@1x.jpg"
               srcset="./img/panorama-mobile@2x.jpg 2x" width="320" height="133" alt="post-image">
           </picture>
         </a>
-        <div class="social-band__post-wrapper-long">
-          <div class="social-band__author-wrapper">
-            <span class="social-band__author">
+        <div class="photo-element-stretch__post-wrapper-long">
+          <div class="photo-element-stretch__author-wrapper">
+            <span class="photo-element-stretch__author">
               Анна
             </span>
-            <span class="social-band__post-time">
+            <span class="photo-element-stretch__post-time">
               (5 минут назад)
             </span>
           </div>
-          <p class="social-band__post-text">
+          <p class="photo-element-stretch__post-text">
             Прыгать или нет? Напишите в
             комментарии свой совет и<br>
-            <span class="social-band__space-tablet">&nbsp;</span>смотрите прямую трансляцию в
+            <span class="photo-element-stretch__space-tablet">&nbsp;</span>смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!
           </p>
-          <div class="social-band__like-counter social-band__like-counter_strech">
-            <svg class="social-band__icon-heart" width="13" height="12">
+          <div class="photo-element-stretch__like-counter photo-element-stretch__like-counter_stretch">
+            <svg class="photo-element-stretch__icon-heart" width="13" height="12">
               <use xlink:href="#icon-heart"></use>
             </svg>
-            <span class="social-band__like-text social-band__like-text_strech">
+            <span class="photo-element-stretch__like-text photo-element-stretch__like-text_stretch">
               Нравится: 215
             </span>
           </div>
@@ -622,7 +628,7 @@
       </li>
     </ul>
 
-    <div class="page-footer__copyright сopyright page-footer__copyright_margin-photo-page">
+    <div class="page-footer__copyright copyright page-footer__copyright_margin-photo-page">
       <b class="copyright__text copyright__text_margin-photo-page">Разработано:</b>
       <a aria-label="Логотип разработчика" class="copyright__link copyright__link_photo-page-margin" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="copyright__logo copyright__logo_no-margin" width="27" height="34">
@@ -630,6 +636,7 @@
         </svg>
       </a>
     </div>
+
   </footer>
 
   <script src="./js/menu.js"></script>

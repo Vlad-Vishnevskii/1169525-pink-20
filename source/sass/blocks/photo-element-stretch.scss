@@ -28,3 +28,154 @@
     right: 121px;
   }
 }
+
+.photo-element-stretch__img {
+  display: block;
+  width: 100%;
+}
+
+.photo-element-stretch__img_stretch {
+  max-height: 506px;
+  object-fit: cover;
+
+  @include tablets {
+    max-height: 509px;
+  }
+
+  @include desktop {
+    max-height: none;
+    min-height: 506px;
+  }
+}
+
+.photo-element-stretch__post-wrapper-long {
+  background-color: $grey;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 16px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  color: $extra-light-black;
+
+  @include tablets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    margin-bottom: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 24px;
+    padding-bottom: 13px;
+  }
+
+  @include desktop {
+    width: 940px;
+    padding-left: 29px;
+    padding-bottom: 0;
+  }
+}
+
+.photo-element-stretch__post-wrapper-long .photo-element-stretch__like-counter {
+  @include tablets {
+    order: 1;
+  }
+}
+
+.photo-element-stretch__post-wrapper-long .photo-element-stretch__post-text {
+  @include tablets {
+    order: 2;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.photo-element-stretch__author {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 14px;
+}
+
+.photo-element-stretch__post-time {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.photo-element-stretch__post-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px;
+
+  @include tablets {
+    min-height: 48px;
+  }
+}
+
+.photo-element-stretch br {
+  @include tablets {
+    display: none;
+  }
+}
+
+.photo-element-stretch__space-tablet {
+  display: none;
+
+  @include tablets {
+    display: inline;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.photo-element-stretch__like-counter {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+
+  @include tablets {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.photo-element-stretch__like-counter_stretch {
+  @include tablets {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.photo-element-stretch__icon-heart {
+  fill: $pink;
+}
+
+.photo-element-stretch__like-text_stretch {
+  @include tablets {
+    order: -1;
+    margin-right: 16px;
+  }
+}
+
+.photo-element-stretch__like-text {
+  margin-left: 15px;
+
+  @include tablets {
+    order: -1;
+    margin-left: 0;
+  }
+}
