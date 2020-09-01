@@ -78,7 +78,7 @@
   }
 }
 
-.facts_space {
+.facts__space {
   display: none;
 
   @include desktop {
@@ -92,7 +92,7 @@
   }
 }
 
-.facts_space-tablet {
+.facts__space-tablet {
   display: none;
 
   @include tablets {
@@ -104,7 +104,7 @@
   }
 }
 
-.facts__br-desctop {
+.facts__br-desktop {
   display: none;
 
   @include desktop {
@@ -112,7 +112,7 @@
   }
 }
 
-.facts__decsription {
+.facts__description {
   color: $extra-light-black;
 
   @include tablets {

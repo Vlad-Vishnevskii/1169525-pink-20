@@ -125,20 +125,20 @@
   fill: $extra-light-black;
   opacity: 0.3;
   outline: none;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:focus {
-    opacity: 0.1;
-  }
 }
 
-.reviews__left-arrow {
+.reviews__arrow_left {
   left: 0;
 }
 
-.reviews__right-arrow {
+.reviews__arrow_right {
   right: 0;
+}
+
+.reviews__link:hover .reviews__arrow {
+  opacity: 0.6;
+}
+
+.reviews__link:focus .reviews__arrow {
+  opacity: 0.1;
 }
