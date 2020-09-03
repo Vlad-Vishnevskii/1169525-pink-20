@@ -10,7 +10,6 @@
     width: 620px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: stretch;
     margin: 0 auto;
   }
@@ -30,12 +29,30 @@
 
   @include tablets {
     max-width: 300px;
+    margin-right: 20px;
   }
 
   @include desktop {
     margin-bottom: 36px;
   }
 }
+
+.social-band__item:nth-of-type(2n) {
+  @include tablets {
+    margin-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 20px;
+  }
+}
+
+.social-band__item:nth-of-type(3n) {
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
 
 .social-band__post-wrapper {
   background-color: $grey;

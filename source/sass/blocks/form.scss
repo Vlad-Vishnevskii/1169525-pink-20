@@ -70,6 +70,8 @@
     width: 100%;
     margin: 0;
     margin-top: 65px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -169,9 +171,12 @@
   }
 
   @include desktop {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 270px 1fr 1fr;
+    column-gap: 44px;
     padding-bottom: 9px;
+    padding-left: 55px;
+    padding-right: 20px;
   }
 }
 
@@ -195,27 +200,31 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @include desktop {
+    margin-left: 20px;
+  }
 }
 
 @include desktop {
   .form__advance-item:first-of-type {
     order: 0;
-    margin-right: 73px;
+    // margin-right: 73px;
   }
 
   .form__advance-item:nth-of-type(2) {
     order: 3;
-    margin-right: 111px;
+    // margin-right: 111px;
   }
 
   .form__advance-item:nth-of-type(3) {
     order: 1;
-    margin-right: 71px;
+    // margin-right: 71px;
   }
 
   .form__advance-item:nth-of-type(4) {
     order: 4;
-    margin-right: 80px;
+    // margin-right: 80px;
   }
 
   .form__advance-item:nth-of-type(5) {
@@ -226,7 +235,7 @@
     order: 5;
 
     & .form__advance-text {
-      margin-left: 42px;
+      // margin-left: 42px;
     }
   }
 }
@@ -331,6 +340,7 @@
 
   @include desktop {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
     margin-left: -69px;
@@ -351,16 +361,13 @@
     }
 
     & .form__field-text_contacts {
+      background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-position: center right;
 
       @include desktop {
         padding-right: 80px;
       }
-    }
-
-    &:first-of-type .form__field-text_contacts {
-      background-image: url("../img/icon-phone.svg");
     }
 
     &:nth-of-type(2) .form__field-text_contacts {
@@ -370,6 +377,7 @@
 
   @include desktop {
     width: 100%;
+    min-width: 371px;
     flex: 1;
     margin-left: 69px;
   }
@@ -401,7 +409,7 @@
     margin-left: auto;
     margin-right: auto;
     border: 2px solid $light-grey;
-    padding-bottom: 57px;
+    padding-bottom: 61px;
     padding-top: 7px;
   }
 
@@ -409,8 +417,9 @@
     width: 434px;
     margin: 0;
     margin-top: 39px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     min-height: 301px;
+    margin-bottom: 50px;
   }
 }
 
@@ -424,18 +433,6 @@
   margin-top: 37px;
   margin-bottom: 0;
 
-  &:nth-last-of-type(2) {
-    margin-top: 46px;
-  }
-
-  &:last-of-type {
-    margin-top: 43px;
-
-    @include desktop {
-      margin-top: 47px;
-    }
-  }
-
   @include tablets {
     margin-top: 2px;
     padding-left: 36px;
@@ -445,6 +442,17 @@
     padding-left: 50px;
   }
 }
+
+.form__versions-item:not(:first-of-type) {
+  @include tablets {
+    margin-top: 43px;
+  }
+
+  @include desktop {
+    margin-top: 45px;
+  }
+}
+
 
 .form__radio-text {
   color: $extra-light-black;
