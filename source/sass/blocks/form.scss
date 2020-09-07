@@ -209,22 +209,18 @@
 @include desktop {
   .form__advance-item:first-of-type {
     order: 0;
-    // margin-right: 73px;
   }
 
   .form__advance-item:nth-of-type(2) {
     order: 3;
-    // margin-right: 111px;
   }
 
   .form__advance-item:nth-of-type(3) {
     order: 1;
-    // margin-right: 71px;
   }
 
   .form__advance-item:nth-of-type(4) {
     order: 4;
-    // margin-right: 80px;
   }
 
   .form__advance-item:nth-of-type(5) {
@@ -233,10 +229,6 @@
 
   .form__advance-item:nth-of-type(6) {
     order: 5;
-
-    & .form__advance-text {
-      // margin-left: 42px;
-    }
   }
 }
 
