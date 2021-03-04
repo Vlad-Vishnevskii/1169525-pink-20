@@ -1,0 +1,1 @@
+function init(){var a=new ymaps.Map("map",{center:[59.9333,30.322],zoom:15,controls:["zoomControl"],behaviors:["drag"]}),n=new ymaps.Placemark([59.9331,30.3226],{hintContent:"ул. Большая Конюшенная, 19/8",balloonContent:"ул. Большая Конюшенная, 19/8"},{iconLayout:"default#image",iconImageHref:"img/map_marker.png",iconImageSize:[36,36]});a.geoObjects.add(n)}ymaps.ready(init);
